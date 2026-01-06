@@ -31,5 +31,8 @@ scopes.
 - 1 Arduino Uno
 - Assorted Wires
 
+### Note on computer architecture: 
+If you happen to be using an ARM based Windows machine, you will most likely be unable to proceed on your device. Please either partner up with someone who uses a different microarchitecture, or request an IdeasClinic laptop from the instructional team.
+
 ---
 Next: [Activity one, digital inputs and outputs](00_digital.md)
