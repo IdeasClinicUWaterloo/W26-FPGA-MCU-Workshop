@@ -1,0 +1,14 @@
+-- begin_signature
+-- i2c_config
+-- end_signature
+WIDTH=8;
+DEPTH=4;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	2 :	01000001;
+	1 :	00010101;
+	0 :	10101111;
+END;

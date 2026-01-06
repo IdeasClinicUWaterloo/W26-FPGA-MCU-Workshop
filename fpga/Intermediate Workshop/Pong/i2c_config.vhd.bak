@@ -1,0 +1,24 @@
+-- simple bit-bashed i2c to configure on-board HDMI transmitter
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity i2c_config is 
+	port (
+		clk:		in STD_LOGIC;		-- 74.25 mhz pixel clock
+		reset: 	in STD_LOGIC;		-- active-high reset
+		scl:		out STD_LOGIC;		-- i2c clock line (push-pull, but board has pull-ups)
+		sda:		inout STD_LOGIC	-- i2c data line (open-drain style)
+	);
+end i2c_config;
+
+architecture procedural of i2c_config is
+	constant CLK_HZ: unsigned := 74_250_000; 	-- clock speed coming in
+	constant I2C_HZ: unsigned := 100_000;		-- target i2c speed
+
+	-- division constant for clock divider to generate i2c clock
+	-- scl toggles every DIV ticks, so full period = 2*DIV ticks
+	constant DIV: unsigned := (CLK_HZ/(I2C_HZ*2));
+	
+	constant I2C_ADDR_WR: unsigned(7 downto 0);
+end procedural;

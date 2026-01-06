@@ -1,0 +1,14 @@
+-- begin_signature
+-- i2c_config_vlog
+-- end_signature
+WIDTH=8;
+DEPTH=3;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	2 :	00000110;
+	1 :	00010000;
+	0 :	00010000;
+END;

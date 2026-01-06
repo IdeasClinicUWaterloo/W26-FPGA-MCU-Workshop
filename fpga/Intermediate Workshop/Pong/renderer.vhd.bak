@@ -1,0 +1,23 @@
+-- draws the pong paddles, ball, border, and the scores using a tiny 8x12 font
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.all
+
+entity renderer is
+	port (
+		hcount: in UNSIGNED(11 downto 0);
+		vcount: in UNSIGNED(11 downto 0);
+		
+	);
+end renderer;
+
+architecture behavioural of renerer is
+
+
+begin
+	process(hcount, vcount)
+	begin
+		
+	end process;
+end behavioural;

@@ -1,0 +1,31 @@
+module pattern_gen (
+    input wire [11:0] hcount,
+    input wire [11:0] vcount,
+    output reg [23:0] rgb
+);
+    always @(*) begin
+        if (vcount >= 720) begin
+            rgb = 24'h000000; // black outside active area
+        end else begin
+            case (hcount[11:8]) // divide 1280 into 16 blocks
+                4'h0: rgb = 24'hFF0000; // red
+                4'h1: rgb = 24'hFF8000; // orange
+                4'h2: rgb = 24'hFFFF00; // yellow
+                4'h3: rgb = 24'h80FF00; // yellow-green
+                4'h4: rgb = 24'h00FF00; // green
+                4'h5: rgb = 24'h00FF80; // green-cyan
+                4'h6: rgb = 24'h00FFFF; // cyan
+                4'h7: rgb = 24'h0080FF; // sky blue
+                4'h8: rgb = 24'h0000FF; // blue
+                4'h9: rgb = 24'h8000FF; // violet
+                4'hA: rgb = 24'hFF00FF; // magenta
+                4'hB: rgb = 24'hFF0080; // pink
+                4'hC: rgb = 24'hFFFFFF; // white
+                4'hD: rgb = 24'h808080; // gray
+                4'hE: rgb = 24'h000000; // black
+                4'hF: rgb = 24'h000000; // black
+                default: rgb = 24'h000000;
+            endcase
+        end
+    end
+endmodule

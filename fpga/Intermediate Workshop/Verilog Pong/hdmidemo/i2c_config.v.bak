@@ -1,0 +1,14 @@
+module i2c_config (
+    input wire clk,
+    input wire reset,
+    output reg scl,
+    inout wire sda
+);
+    // Very simple I2C stub for demo only.
+    // Replace with real I2C controller or FSM-based I2C config
+
+    assign sda = 1'bz;
+    always @(posedge clk) begin
+        scl <= 1'b1; // do-nothing stub
+    end
+endmodule
