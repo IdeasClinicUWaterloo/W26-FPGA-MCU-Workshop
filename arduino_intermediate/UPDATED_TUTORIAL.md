@@ -31,3 +31,52 @@ If your kit included a shield, attach the shield onto the Arduino and wire the b
 
 ![image info](./assets/circuit_pong.png)
 Figure 1 - Circuit diagram for Pong game 
+
+
+### 2.2 Skeleton Code Checklist 
+You’ll build on some skeleton code that provides the framework for Pong. Most of the logic was pulled from the code and it's up to you to fill it in using the tutorials and code blocks from this document.  
+
+You can find the skeleton code in the same LEARN folder as this document. 
+
+Here’s a checklist to help you keep track of your progress through the skeleton. This is the bare minimum to create a functional game but there’s lots more that can be added 
+
+* Declerations 
+    * Declare all the variables and libraries at the start of the program. This includes the variables in section 3.1-I2C and the button pin declarations according to your circuits 
+* setup() 
+    * Complete the screen configuration according to section 3.1-I2C 
+    * Declare the pin Modes of the buttons 
+    * Attach the interrupt according to section 3.3 
+* pause()
+    * Complete the logic to switch between the play and pause states
+    * Find out how to pause the game clock 
+* loop()
+    * Handle the paddle direction switches according to button presses according to section 3.2 Button polling 
+    * Handle the paddle constraints, restricting the paddle in the screen according to section 3.2 
+    * Ball Movement according to section 3.5 
+    * Ball collision with paddles according to section 3.5 
+    * Ball collision with screen according to section 3.5 
+    * Handle scoring, resetting rounds and game over conditions according to section 3.5 
+    * Draw the screen according to section 3.1 I2C 
+    * Game clock 
+    * Update the state of buttons on previous loop according to section 3.2 
+* resetRound()
+    * Fill in starting locations of balls and paddles according when resetting rounds after scoring 
+
+## 3 Coding the Game
+Now you’re ready to create the project (aka sketch) and write the code to control your system. Follow these steps:  
+
+1. Download the skeleton code from Learn 
+2. Start the Arduino Integrated Development Environment (IDE) 
+3. Go to **File > Open** to open the skeleton code. The skeleton code is missing most of its functionality. Use this document to fill it in. 
+
+
+### 3.1 I2C Communication 
+I2C is an important protocol for serial communication between devices. It is often used to connect peripherals like sensors or displays to a central controller system. In this case, I2C communication will be used to connect the Arduino microcontroller to the OLED display. I2C uses two wires to enable this synchronous transmission of data, the first being SCL which is the Serial Clock which keeps the two systems synchronized, and SDA which is Serial Data and is used for the serial transmission of data. The Arduino UNO has 2 dedicated I2C pins labelled SCL and SDA that can be used.  
+
+Here’s the code to display the player paddles, scores, and ball for the Pong game. Copy and paste this into your project, then compile and upload the program. Sections in orange should already be included in the skeleton project. 
+
+You’ll need to install some libraries to interface with the screen. In the Arduino Library manager, search Adafruit GFX and Adafruit SSD1306. Make sure to also install all dependencies.  
+
+You’ll know you’re successful when you see the scores, paddles, and a ball on the screen. 
+
+This code can be pasted into a new sketch. Once you understand the process of writing to the screen, you can add this code to the corresponding sections of the skeleton to add display functionality. 
