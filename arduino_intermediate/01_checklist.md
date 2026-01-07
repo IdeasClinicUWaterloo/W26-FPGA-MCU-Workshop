@@ -18,6 +18,7 @@ Therefore, the two code examples below are the same.
 </tr>
 <tr>
 <td>
+
 ```c
 int main()
 {
@@ -27,8 +28,10 @@ int main()
   }
 }
 ```
+
 </td>
 <td>
+
 ```c
 void setup()
 {
@@ -40,6 +43,7 @@ void loop()
 
 }
 ```
+
 </td>
 </tr>
 </table>
