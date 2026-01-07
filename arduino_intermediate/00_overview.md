@@ -9,4 +9,6 @@ Follow Figure 1 below to connect the OLED display and the 3 pushbuttons to the A
  ![Circuit diagram for the Pong game](assets/circuit_pong.png)
 
 ---
-Back: [Introduction](README.md)
+
+|Back: [Introduction](README.md) | [Top](README.md) |Next: [Code checklist](01_checklist.md)|
+|---|---|---|
