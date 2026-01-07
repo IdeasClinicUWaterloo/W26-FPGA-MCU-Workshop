@@ -14,6 +14,11 @@ This code can be pasted into a new sketch to demonstrate button polling. Once yo
 #include <Adafruit_SSD1306.h>
 ````
 
+### Definitions
+````arduino
+const int BTN_P1 = 4;
+````
+
 
 ### Setup Code
 ````arduino
