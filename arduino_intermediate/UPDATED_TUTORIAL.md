@@ -80,3 +80,68 @@ You’ll need to install some libraries to interface with the screen. In the Ard
 You’ll know you’re successful when you see the scores, paddles, and a ball on the screen. 
 
 This code can be pasted into a new sketch. Once you understand the process of writing to the screen, you can add this code to the corresponding sections of the skeleton to add display functionality. 
+
+Pay attention to the relvent comments which indicate what should go where. 
+
+3.1 A
+````arduino 
+
+//Defining screen
+//Screen Variables
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+#define OLED_RESET -1
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+ 
+//Score tracking
+int scoreP1 = 0;
+int scoreP2 = 0;
+
+const int PADDLE_WIDTH = 2;
+const int PADDLE_HEIGHT = 12;
+ 
+//Position tracking for player 1 paddle
+int P1_X =0;
+int P1_Y = 32;
+//Position tracking for player 2 paddle
+int P2_X = 128-PADDLE_WIDTH;
+int P2_Y = 32;
+//Position tracking for ball
+int ballX = 64;
+int ballY = 32;
+````
+
+3.1 B
+````arduino 
+display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+display.clearDisplay();
+display.setTextSize(1);
+display.setTextColor(SSD1306_WHITE);
+````
+
+
+3.1 C
+````arduino
+//Display must first be cleared display.clearDisplay();
+ 
+// Sets up text for the player scores
+display.setTextSize(1);
+display.setCursor(40, 0);
+display.print("P1:");
+display.print(scoreP1);
+display.print("  P2:");
+display.print(scoreP2);
+display.setCursor(40,10);
+display.print(gameTime);
+
+//Set up paddles
+display.fillRect(P1_X, P1_Y, PADDLE_WIDTH, PADDLE_HEIGHT, SSD1306_WHITE);
+display.fillRect(P2_X, P2_Y, PADDLE_WIDTH, PADDLE_HEIGHT, SSD1306_WHITE);
+//Set up ball
+display.fillRect(ballX, ballY, 2, 2, SSD1306_WHITE);
+ 
+display.display();
+//Displays everything
+delay(15);
+````
+
