@@ -11,9 +11,14 @@ The sketch API relies on two entrypoints, `setup` and `loop`.
 
 Therefore, the two code examples below are the same.
 
-|Arduino Sketch|Typical C program|
-|---|---|
-|```c
+
+<table>
+<tr>
+<td> Arduino Sketch </td> <td> Typical C program </td>
+</tr>
+<tr>
+<td>
+```c
 int main()
 {
   setup();
@@ -22,7 +27,8 @@ int main()
   }
 }
 ```
-|
+</td>
+<td>
 ```c
 void setup()
 {
@@ -34,8 +40,9 @@ void loop()
 
 }
 ```
-|
-
+</td>
+</tr>
+</table>
 
 
 ```c
