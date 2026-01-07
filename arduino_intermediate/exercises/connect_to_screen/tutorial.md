@@ -16,6 +16,10 @@ This code can be pasted into a new sketch. Once you understand the process of wr
 
 ### Definitions 
 ````arduino
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
 //Screen Variables
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
@@ -58,10 +62,9 @@ display.setTextSize(1);
 display.setCursor(40, 0);
 display.print("P1:");
 display.print(scoreP1);
-display.print("  P2:");
+display.print(" P2:");
 display.print(scoreP2);
 display.setCursor(40,10);
-display.print(gameTime);
 
 //Set up paddles
 display.fillRect(P1_X, P1_Y, PADDLE_WIDTH, PADDLE_HEIGHT, SSD1306_WHITE);
