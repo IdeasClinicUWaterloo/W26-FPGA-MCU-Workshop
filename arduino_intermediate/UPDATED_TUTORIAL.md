@@ -161,8 +161,12 @@ This code will turn off the built LED when the button is pressed
 
 3.2 A
 ````arduino
-pinMode(BTN_P1, INPUT_PULLUP);
 pinMode(LED_BUILTIN, OUTPUT);
 //Declares our button1Pin as an input
 // INPUT_PULLUP will by default set our pin to HIGH and will be set LOW when the button is pressed
+````
+
+3.2 b
+````arduino 
+
 ````
