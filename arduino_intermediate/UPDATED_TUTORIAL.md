@@ -145,3 +145,24 @@ display.display();
 delay(15);
 ````
 
+#### 3.1.1 Challenge
+Add the code necessary to display a game time in the format: “MM:SS” where MM are the number of minutes and SS are the number of seconds. For now, just display “00:00”. We will set up a timer to include the game time later in the workshop. 
+
+
+### 3.2 Button Polling
+Button polling is the primary method of user input we will use for Pong. Suppose we want to determine when a button is pressed. Wire one end of the button to ground and the other to a digital pin as in Figure 1.  
+
+To test that the button is working, add the code below to your existing project. This code will turn the on-board LED on when the button is pressed. 
+
+This code can be pasted into a new sketch to demonstrate button polling. Once you understand the process, you can add polling functionality to the skeleton. 
+
+This code will turn off the built LED when the button is pressed
+
+
+3.2 A
+````arduino
+pinMode(BTN_P1, INPUT_PULLUP);
+pinMode(LED_BUILTIN, OUTPUT);
+//Declares our button1Pin as an input
+// INPUT_PULLUP will by default set our pin to HIGH and will be set LOW when the button is pressed
+````
