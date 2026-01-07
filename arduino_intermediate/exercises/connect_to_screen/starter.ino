@@ -1,22 +1,22 @@
-// GLOBALS
+// BEGIN INCLUDES
 
-// START DEFINITIONS
+// END INCLUDES
 
+
+// BEGIN DEFINITIONS
 
 // END DEFINTIONS
 
 
 void setup() {
-    // START SETUP CODE
-
+    // BEGIN SETUP CODE
 
     // END SETUP CODE
 
 }
 
 void loop() {
-    // START LOOP CODE
-
+    // BEGIN LOOP CODE
 
     // END LOOP CODE
 

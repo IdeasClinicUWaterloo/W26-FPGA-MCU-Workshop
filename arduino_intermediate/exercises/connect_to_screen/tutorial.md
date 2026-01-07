@@ -14,12 +14,16 @@ You’ll know you’re successful when you see the scores, paddles, and a ball o
 This code can be pasted into a new sketch. Once you understand the process of writing to the screen, you can add this code to the corresponding sections of the skeleton to add display functionality. 
 
 
-### Definitions 
+### Includes
 ````arduino
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+````
 
+
+### Definitions 
+````arduino
 //Screen Variables
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
