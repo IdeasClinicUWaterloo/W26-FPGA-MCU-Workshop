@@ -1,4 +1,4 @@
-# Building the Pong Circuit
+# Building the circuit for Pong
 
 Pong is a simple game, however the logic used is fundamental to creating interactable devices that respond to the real world. This activity aims to help you grasp the principles of digital logic and interactable devices by introducing concepts such as button polling, timers and interrupts. These principles are the core of the systems we interact with every day ranging from handheld devices to complex game engines.
 

@@ -12,13 +12,20 @@ With polling loops, our code manually checks the status of any input pins at a r
 
 These concepts will be used to create a simple, 2-player version of the game Pong. 
 
-- Required Materials 
+# Required Materials 
+
 - 1x Arduino UNO Rev. 4 
 - 1x OLED Display 
 - 1x Breadboard 
 - 3x Pushbuttons 
-- 12x Wires 
+- 12x Wires
 - 1x USB-C Cable 
+
+# Table of Contents
+
+1. [Set up the Arduino development tools](00_devtools.md)
+1. [Building the circuit for Pong](00_overview.md)
+1. [What we will code and the skeleton](01_checklist.md)
 
 ---
 Next: [Building the circuit for Pong](00_overview.md)
