@@ -21,14 +21,14 @@ This code can be pasted into a new sketch. Once you understand the process of wr
 #define SCREEN_HEIGHT 64
 #define OLED_RESET -1
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
- 
+
 //Score tracking
 int scoreP1 = 0;
 int scoreP2 = 0;
 
 const int PADDLE_WIDTH = 2;
 const int PADDLE_HEIGHT = 12;
- 
+
 //Position tracking for player 1 paddle
 int P1_X =0;
 int P1_Y = 32;
@@ -58,7 +58,7 @@ display.setTextSize(1);
 display.setCursor(40, 0);
 display.print("P1:");
 display.print(scoreP1);
-display.print("  P2:");
+display.print("  P2:");
 display.print(scoreP2);
 display.setCursor(40,10);
 display.print(gameTime);
@@ -68,7 +68,7 @@ display.fillRect(P1_X, P1_Y, PADDLE_WIDTH, PADDLE_HEIGHT, SSD1306_WHITE);
 display.fillRect(P2_X, P2_Y, PADDLE_WIDTH, PADDLE_HEIGHT, SSD1306_WHITE);
 //Set up ball
 display.fillRect(ballX, ballY, 2, 2, SSD1306_WHITE);
- 
+
 display.display();
 //Displays everything
 delay(15);
