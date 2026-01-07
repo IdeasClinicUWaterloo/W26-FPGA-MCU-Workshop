@@ -17,6 +17,7 @@ This code can be pasted into a new sketch to demonstrate button polling. Once yo
 ### Definitions
 ````arduino
 const int BTN_P1 = 4;
+bool lastBtnP1 = HIGH;
 ````
 
 
