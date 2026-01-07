@@ -34,7 +34,7 @@ We will use the generic Linux format in these instructions.
 2. Unzip the program into any folder.
 3. The program is now installed.
    Start it by running the `arduino-ide` executable.
-4. Follow these [Arduino Support instructions](https://support.arduino.cc/hc/en-us/articles/9005041052444-Fix-udev-rules-on-Linux#renesas) to add the necessary `udev` rules to connect to th UNO R4 Minima board.
+4. Follow these [Arduino Support instructions](https://support.arduino.cc/hc/en-us/articles/9005041052444-Fix-udev-rules-on-Linux#renesas) to add the necessary `udev` rules to connect to the UNO R4 Minima board.
 
 
 ### macOS
@@ -85,3 +85,5 @@ cd resources/app/lib/backend/resources
    
 5. **Log out and back in.**
    This updates permissions on your device.
+
+You should now be able to upload sketches from the Arduino IDE to your board.

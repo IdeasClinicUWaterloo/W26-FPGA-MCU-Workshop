@@ -20,10 +20,11 @@ These concepts will be used to create a simple, 2-player version of the game Pon
 - 3x Pushbuttons 
 - 12x Wires
 - 1x USB-C Cable 
+- Arduino IDE installed.
+  [Click here for instructions on how to install Arduino IDE](../arduino_setup/README.md)
 
 # Table of Contents
 
-1. [Set up the Arduino development tools](00_devtools.md)
 1. [Building the circuit for Pong](00_overview.md)
 1. [What we will code and the skeleton](01_checklist.md)
 
