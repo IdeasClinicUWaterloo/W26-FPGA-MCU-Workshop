@@ -19,9 +19,12 @@ The code below is what the logic for flipping the paddle direction might look li
 Take a look at the skeleton code and paste the sections of this block you need into the skeleton.
 
 ````arduino
-// If the button states for either player change from Low to HIGH, the paddle direction is flipped p1 and p2Dir need to be declared as const int before your setup. Assign them a value to determine their speed. 
+/* If the button states for either player change from Low to HIGH, the paddle direction is flipped p1 and p2Dir need to be declared as const int before your setup. 
+Assign them a value to determine their speed. */ 
 
-// If the state of the player1 button is high, the direction of the paddle is flipped. lastBtnP1 tracks the state of the button on the previous loop of the code. This is called edge detection and detects the change of the button state.
+/* If the state of the player1 button is high, the direction of the paddle is flipped. 
+lastBtnP1 tracks the state of the button on the previous loop of the code. 
+This is called edge detection and detects the change of the button state. */
 
 if (lastBtnP1 == HIGH && btnP1 == LOW) {
 
@@ -48,7 +51,7 @@ This can be copied into the corresponding section of the skeleton code to add pa
 ````arduino
 if (P1_Y <= 0 || P1_Y >= SCREEN_HEIGHT - PADDLE_HEIGHT) {
     // constrain prevents the paddle from extending beond the screen
-    
+
     P1_Y = constrain(P1_Y, 0, SCREEN_HEIGHT - PADDLE_HEIGHT);
     p1Dir = 0;
 }
