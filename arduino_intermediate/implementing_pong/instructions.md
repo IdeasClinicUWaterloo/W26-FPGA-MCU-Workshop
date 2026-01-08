@@ -71,10 +71,9 @@ This code can be pasted into corresponding sections of the skeleton code to add 
 
 
 ````arduino
-//FILL IN as defined in section 3.6 code block 1
 ballX += ballVX;
 ballY += ballVY;
-//This is the movement for the ball. Similar to the paddles, every loop of the code will update the position
+// This is the movement for the ball. Similar to the paddles, every loop of the code will update the position
 
 // Paddle collision
 
@@ -98,4 +97,39 @@ if (ballX >= P2_X - 1 &&
 /* This is collision for the balls and paddles. 
 Fill in collision for the top and bottom of the screen.
 If the ball reaches the */
+````
+
+
+## Challenges
+
+### 1 Boundaries
+Currently, there is no logic for the ball colliding with the top and bottom walls of the game. 	Add logic to reverse the vertical direction of the ball when would go out of bounds vertically. 
+
+This code can be added to the corresponding section of the skeleton to add collision functionality with the tpo and bottom of the screen.	
+
+````arduino
+if (ballY <= 0 || ballY >= SCREEN_HEIGHT - 2) {
+    // This is the bounds of top and bottom the screen. What happens when the ball hits the bounds?
+
+}
+````
+
+Scoring is achieved by checking if the ball has contacted either side of the border, without contacting the paddles. Recreate the below code for a player 2 score as well.
+
+This code can be added to the corresponding section of the skeleton to add scoring functionality
+
+````arduino
+if (ballX < 0) {
+    scoreP2++;
+	resetRound();
+}
+
+if (ballX > SCREEN_WIDTH) {
+    scoreP1++;
+	resetRound();
+}
+
+/* This is the scoring for one side of the screen. A similar code 
+block must be written for the opposite side, change the variables! */
+
 ````
