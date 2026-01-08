@@ -54,5 +54,5 @@ When creating the function buttonInterrupt() or any interrupt function, do not u
 
 ---
 
-|Back: [Exercise 2: button polling](../button_polling/tutorial.md) | [Top](../../README.md) |Next: [Exercise 4: interrupts](../time_functions/tutorial.md)|
+|Back: [Exercise 2: button polling](../button_polling/tutorial.md) | [Top](../../README.md) |Next: [Exercise 4: time based functions and how they are implemented under the hood](../time_functions/tutorial.md)|
 |---|---|---|
