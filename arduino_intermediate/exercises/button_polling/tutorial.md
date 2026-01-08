@@ -35,6 +35,8 @@ bool btnP1 = digitalRead(BTN_P1);
 // digitalRead() takes in the button input
 // LED_BUILT_IN is the LED built into every Arduino Board. It can also be accessed by digitalPin 13
 
+delay(15);
+
 if (btnP1 == LOW && lastBtnP1 == HIGH){ 
     digitalWrite(LED_BUILTIN,HIGH);
 } else {
