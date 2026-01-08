@@ -17,5 +17,5 @@ gameTime = millis();
 
 ---
 
-|Back: [Exercise 4: interrupts](../interrupts/tutorial.md) | [Top](../../README.md) ||
+|Back: [Exercise 4: interrupts](../interrupts/tutorial.md) | [Top](../../README.md) | [Build your own pong!](../../implementing_pong/instructions.md) |
 |---|---|---|
