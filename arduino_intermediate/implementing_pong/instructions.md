@@ -19,7 +19,8 @@ The code below is what the logic for flipping the paddle direction might look li
 Take a look at the skeleton code and paste the sections of this block you need into the skeleton.
 
 ````arduino
-/* If the button states for either player change from Low to HIGH, the paddle direction is flipped p1 and p2Dir need to be declared as const int before your setup. 
+/* If the button states for either player change from Low to HIGH, 
+the paddle direction is flipped p1 and p2Dir need to be declared as const int before your setup. 
 Assign them a value to determine their speed. */ 
 
 /* If the state of the player1 button is high, the direction of the paddle is flipped. 
