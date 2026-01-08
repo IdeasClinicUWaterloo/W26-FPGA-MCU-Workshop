@@ -44,3 +44,8 @@ if (btnP1 == LOW && lastBtnP1 == HIGH){
 }
 lastBtnP1 = btnP1;
 ````
+
+This code will compare the state of the button to the state on the previous loop. This is called edge detection and will detect change. The button is default high thanks to the pullup resistor and therefore will be read LOW when pressed. 
+
+## Challenge
+Add code to your project to read the state of button 2. Test that you can control the on-board LED with button 2 as well. After you complete this challenge, comment the code for writing to LED_BUILTIN based on the buttons.
