@@ -114,6 +114,8 @@ if (ballY <= 0 || ballY >= SCREEN_HEIGHT - 2) {
 }
 ````
 
+### 2 Scoring 
+
 Scoring is achieved by checking if the ball has contacted either side of the border, without contacting the paddles. Recreate the below code for a player 2 score as well.
 
 This code can be added to the corresponding section of the skeleton to add scoring functionality
@@ -134,14 +136,14 @@ block must be written for the opposite side, change the variables! */
 
 ````
 
-### 2 Reset
+### 3 Reset
 Complete the resetRound function so that it resets the position of the ball when it is called. 
 
-### 3 Win Criteria
+### 4 Win Criteria
 
 Decide what value constitutes a winning score. Change your game so that after a player reaches that score, a “game over” is triggered. Include some way of resetting the game so the players can play again.
 
-### 4 Make it your own 
+### 5 Make it your own 
 
 Using the tools you’ve learned, create a working game of Pong. Use button polling to read user inputs and control the direction and movement of paddles and interrupts to control pause functionality or any other functions. Try to implement a timer and game clock. Find the skeleton for the functions and code you need to get started on LEARN.
 

@@ -2,8 +2,8 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-//Defining screen
-//FILL IN screen variables from Section 3.1 - I2C Communication
+// Defining screen
+// FILL IN screen variables from the connect_to_screen module
 
 
 
@@ -15,7 +15,7 @@ const int BTN_PAUSE = 2;
 
 int p1Dir = 0;
 int p2Dir = 0;
-//Ball starting velocity
+// Ball starting velocity
 int ballVX = -1;
 int ballVY = 1;
 
@@ -28,39 +28,42 @@ int pressCountP2 = 0;
 int gameTime = 0;
 
 enum GameState {
-  //These are the different game states. In your code, think about what should happen in each state and when to switch between states
+  // These are the different game states. In your code, think about what should happen in each state and when to switch between states
+
   PLAYING,
   GAME_OVER,
   GAME_PAUSE
+
 };
 
-//Starting state
+// Starting state
 GameState state = PLAYING;
 
 
 void setup() {
-  //Configure screen
-  //Copy screen setup code from section 3.1 - I2C Communication
+  // Configure screen
 
-  //Declare our buttons
+  // Declare our buttons
   pinMode(BTN_P1, INPUT_PULLUP);
-  //Missing btn1 and pauseBtn. Remember to attach the interrupt from section 3.3 - Interrupts
+  // Missing BTN_P2 and BTN_PAUSE. Remember to attach the interrupt from the interrupts module
 }
 
 void pause() {
-  //This is our interrupt function triggered by our pause button. Remember, the same button is used to pause and unpause
-  //Complete the logic. Think about what happens when the pause interupt it triggered(it has to change gameStates)
+  // This is our interrupt function triggered by our pause button. Remember, the same button is used to pause and unpause
+  // Complete the logic. Think about what happens when the pause interupt it triggered (it has to change gameStates)
   if (state == PLAYING) {
-    //Fill in
+    // FILL IN
+
   } else if (state == GAME_PAUSE) {
-    //fill in
+    // FILL IN
+
   }
 
-  //The pause function will require additional logic to pause the built in timers
+  // The pause function will require additional logic to pause the built in timers
 }
 
 void loop() {
-  //Button polls
+  // Button polls
   bool btnP1 = digitalRead(BTN_P1);
   bool btnP2 = digitalRead(BTN_P2);
 
@@ -70,52 +73,55 @@ void loop() {
 
     // Button presses to toggle paddle direction
     if (lastBtnP1 == HIGH && btnP1 == LOW) {
-      //Fill in from section 3.2 - Button polling code block 2
+      // Use the button_polling module
+
     }
-    //Toggle P2 paddle direction.
+
+    // Toggle P2 paddle direction.
+  
     if (lastBtnP2 == HIGH && btnP2 == LOW) {
-      //Fill in
+      // FILL IN
+
     }
 
     // Paddle movement
     P1_Y += p1Dir;
     P1_Y += p2Dir;
-    //
-    //FILL IN paddle constraints from section 3.2 - Button Polling code block 3
+
+    // FILL IN paddle constraints from the useful code snippets in the intructions.md
 
     //
 
     // Ball movement
-    //This is acheived by adding the X and Y velocity to the respective X and Y positions.
+    // This is acheived by adding the X and Y velocity to the respective X and Y positions.
     // if ball collides with top or bottom screen, what happens?
     //
-    //FILL IN as defined in section 3.5 code block 1
+    // FILL IN from useful code snippets in instructions.md
 
     //
 
 
     if (ballY <= 0 || ballY >= SCREEN_HEIGHT - 2) {
-      //This is the bounds of top and bottom the screen. What happens when the ball hits the bounds?
+      // This is the bounds of top and bottom the screen. What happens when the ball hits the bounds?
     }
 
 
-    // Scoring // Complete these sections as defined in seciton 3.5 code block 3
-    //What happens if a ball gets past the paddle and hits the wall? track the score and reset the round. Remember to end the game if the score
-    //threshold is met
+    // Scoring 
+    // Complete these sections as defined in challenge 2 of the instructions.md
+    // What happens if a ball gets past the paddle and hits the wall? track the score and reset the round. Remember to end the game if the score
+    // threshold is met
     if (ballX < 0) {
-      //Fill in
+      // FILL IN
     }
     if (ballX > SCREEN_WIDTH) {
-      //Fill in
+      // FILL IN
     }
 
     // Drawing
-    //FILL IN with screen code from section 3.1 - I2C Communication
-
-    //
+    // FILL IN using the connect_to_screen module
 
     //Update the states of lastBtnP1 and lastBtnP2
-    //FILL IN from Section 3.2 - Button Polling
+    // FILL IN using the button_polling module
   }
 
   // Game Over
@@ -155,20 +161,19 @@ void loop() {
   lastBtnP2 = btnP2;
 }
 
-//Resets the round after a point is scored
+// Resets the round after a point is scored
 void resetRound() {
 
-  //Set the starting positions and directions of the ball and paddles.
-  //FILL IN
+  // Set the starting positions and directions of the ball and paddles.
+  // FILL IN
 
-  //
   ballVX *= -1;
-  //Picks a random direction
+  // Picks a random direction
   ballVY = (random(0, 2) == 0) ? -1 : 1;
 }
 
 
-//resets the game after game over
+// resets the game after game over
 void resetGame() {
   resetRound();
   pressCountP1 = 0;
