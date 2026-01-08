@@ -34,6 +34,7 @@ After you complete each activity, you will have the knowhow to create your own P
 3. [Exercise 2: button polling](exercises/button_polling/tutorial.md)
 4. [Exercise 3: interrupts](exercises/interrupts/tutorial.md)
 5. [Exercise 4: time-based functions and how they are implemented under the hood](exercises/time_functions/tutorial.md)
+6. [Build your own pong!](implementing_pong/instructions.md)
 
 ---
 Next: [Building the circuit for Pong](00_overview.md)
