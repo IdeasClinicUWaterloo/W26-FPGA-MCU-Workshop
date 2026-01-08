@@ -4,6 +4,8 @@ Interrupts are methods of pausing code that is currently running to execute a sh
 
 Suppose we want to trigger an interrupt upon pressing a button. As soon as the pin the button is attached to changes, we want to trigger a function called buttonInterrupt().  
 
+**IMPORTANT:** If in the future you implement an interrupt which modifies a variable (perhaps one you're using to track the state of a game of Pong), ensure that that variable is declared using **volatile**.
+
 
 This code can be pasted into the starter.ino file to demonstrate how button interrupts work. After you understand how they work, you can use this method to add interrupt functionality to the skeleton. 
 
