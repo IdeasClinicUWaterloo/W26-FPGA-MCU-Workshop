@@ -22,7 +22,7 @@ This code can be pasted into the starter.ino file to demonstrate how button inte
 int BTN_PAUSE = 2;
 void buttonInterrupt(){
     // This is the code that will be executed after triggering the interrupt
-	digitalWrite(LED_BUILTIN,LOW);
+	digitalWrite(LED_BUILTIN, LOW);
 }
 ````
 
@@ -43,7 +43,7 @@ FALLING will trigger when the pin changes from 1 to 0 – RISING will trigger wh
 
 ### Loop Code
 ````arduino 
-digitalWrite(LED_BUILTIN,HIGH);
+digitalWrite(LED_BUILTIN, HIGH);
 delay(1000);
 ````
 
