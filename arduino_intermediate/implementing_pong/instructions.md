@@ -154,5 +154,5 @@ Using the tools you’ve learned, create a working game of Pong. Use button poll
 
 ---
 
-|Back: [Exercise 4: time-based functions and how they are implemented under the hood](../../exercises/time_functions/tutorial.md) | [Top](../../README.md) |
+|Back: [Exercise 4: time-based functions and how they are implemented under the hood](../exercises/time_functions/tutorial.md) | [Top](../../README.md) |
 |---|---|
