@@ -10,5 +10,5 @@ Follow Figure 1 below to connect the OLED display and the 3 pushbuttons to the A
 
 ---
 
-|Back: [Introduction](README.md) | [Top](README.md) |Next: [Code checklist](01_checklist.md)|
+|Back: [Introduction](README.md) | [Top](README.md) |Next: [Exercise 1: connecting to the display](exercises/connect_to_screen/tutorial.md)|
 |---|---|---|
