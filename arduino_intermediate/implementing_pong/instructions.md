@@ -133,3 +133,19 @@ if (ballX > SCREEN_WIDTH) {
 block must be written for the opposite side, change the variables! */
 
 ````
+
+### 2 Reset
+Complete the resetRound function so that it resets the position of the ball when it is called. 
+
+### 3 Win Criteria
+
+Decide what value constitutes a winning score. Change your game so that after a player reaches that score, a “game over” is triggered. Include some way of resetting the game so the players can play again.
+
+### 4 Make it your own 
+
+Using the tools you’ve learned, create a working game of Pong. Use button polling to read user inputs and control the direction and movement of paddles and interrupts to control pause functionality or any other functions. Try to implement a timer and game clock. Find the skeleton for the functions and code you need to get started on LEARN.
+
+- Experiment with the game. Change the size of the ball or paddles
+- Have ready screens for each player
+- Change the speed of the ball or paddles
+- Change the scale of the time
