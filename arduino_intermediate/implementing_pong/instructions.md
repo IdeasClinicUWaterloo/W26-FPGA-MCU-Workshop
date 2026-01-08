@@ -56,5 +56,46 @@ if (P1_Y <= 0 || P1_Y >= SCREEN_HEIGHT - PADDLE_HEIGHT) {
     P1_Y = constrain(P1_Y, 0, SCREEN_HEIGHT - PADDLE_HEIGHT);
     p1Dir = 0;
 }
+````
 
+### 2 Game Logic
+The game logic for Pong can be broken down into several components. 
+
+Before starting the game, wait for a player input. After receiving input wait for input from player 2. After both players are ready, the game can enter the playing state and the game begins.
+
+Ball movement and positioning is broken down into X and Y components. By storing a separate variable for the speed of the ball in the X and Y, movement can be simulated by adding the velocity to the position every loop of the code. When the ball collides with the borders or paddles, the ball velocity is flipped. 
+
+Collision is determined by comparing the position of the ball with the position of the paddles and borders. Ball position overlaps, X or Y velocity correspondingly flips. 
+
+This code can be pasted into corresponding sections of the skeleton code to add collusion and movement functionality.
+
+
+````arduino
+//FILL IN as defined in section 3.6 code block 1
+ballX += ballVX;
+ballY += ballVY;
+//This is the movement for the ball. Similar to the paddles, every loop of the code will update the position
+
+// Paddle collision
+
+/* This will flip the direction of the ball on contact with a paddle. 
+It takes into account the width of the paddle when creating hitboxes. */
+
+/* Remember, P1_Y and P2_Y represent the bottom of the paddles and 
+the collision zones must be "extended" by the paddle height. */
+
+if (ballX <= P1_X + PADDLE_WIDTH &&
+    ballY >= P1_Y && ballY <= P1_Y + PADDLE_HEIGHT) {
+    ballVX *= -1;
+    ballX = P1_X + PADDLE_WIDTH + 1;
+}
+
+if (ballX >= P2_X - 1 &&
+    ballY >= P2_Y && ballY <= P2_Y + PADDLE_HEIGHT) {
+    ballVX *= -1;
+    ballX = P2_X - 2;
+}
+/* This is collision for the balls and paddles. 
+Fill in collision for the top and bottom of the screen.
+If the ball reaches the */
 ````
