@@ -86,6 +86,6 @@ Add the code necessary to display a game time in the format: “MM:SS” where M
 
 ---
 
-|Back: [Exercise 1: connecting to the display](../connect_to_screen/tutorial.md) | [Top](../../README.md) |Next: [Exercise 2: button polling](../button_polling/tutorial.md)|
+|Back: [Building the circuit for Pong](../../00_overview.md) | [Top](../../README.md) |Next: [Exercise 2: button polling](../button_polling/tutorial.md)|
 |---|---|---|
 
