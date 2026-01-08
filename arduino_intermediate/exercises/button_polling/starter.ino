@@ -3,6 +3,11 @@
 // END INCLUDES
 
 
+// BEGIN DEFINITIONS 
+
+// END INCLUDES
+
+
 void setup() {
     // BEGIN SETUP CODE
 
