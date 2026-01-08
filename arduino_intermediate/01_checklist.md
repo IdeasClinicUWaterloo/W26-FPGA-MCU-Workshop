@@ -13,7 +13,7 @@ Therefore, the two code examples below are the same.
 
 <table>
 <tr>
-<td> Arduino Sketch </td> <td> Typical C program </td>
+<td> Typical C Program </td> <td> Arduino Sketch </td>
 </tr>
 <tr>
 <td>
