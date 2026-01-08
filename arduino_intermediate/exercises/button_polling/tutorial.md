@@ -52,5 +52,5 @@ Add code to your project to read the state of button 2. Test that you can contro
 
 ---
 
-|Back: [Exercise 1: connecting to the display](../connect_to_screen/tutorial.md) | [Top](../../README.md) |Next: [Exercise 3: interrupts](exercises/interrupts/tutorial.md)|
+|Back: [Exercise 1: connecting to the display](../connect_to_screen/tutorial.md) | [Top](../../README.md) |Next: [Exercise 3: interrupts](../interrupts/tutorial.md)|
 |---|---|---|
