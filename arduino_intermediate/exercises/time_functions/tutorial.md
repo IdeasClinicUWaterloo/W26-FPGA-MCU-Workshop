@@ -13,4 +13,9 @@ gameTime = millis();
 ## Challenge
 1. The code above will return the time since the Arduino powered on, in milliseconds.  We would like you to display the game time in the format MM:SS. You need to copy your solution from the **connect_to_screen** module to this module's **starter.ino** file. Then, write code to calculate the minutes and seconds and store them in variables.
 
-2. Add your code from the **interrupts** module to your new code. Implement logic such that if the pause button has been pressed (interrupt button from **interrupts** module), the displayed timer stops progressing. Once the pause button is pressed again, the timer should resume. 
+2. Add your code from the **interrupts** module to your new code. Implement logic such that if the pause button has been pressed (interrupt button from **interrupts** module), the displayed timer stops progressing. Once the pause button is pressed again, the timer should resume.
+
+---
+
+|Back: [Exercise 4: interrupts](../interrupts/tutorial.md) | [Top](../../README.md) | [Build your own pong!](../../implementing_pong/instructions.md) |
+|---|---|---|

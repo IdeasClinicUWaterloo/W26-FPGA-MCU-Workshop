@@ -151,3 +151,8 @@ Using the tools you’ve learned, create a working game of Pong. Use button poll
 - Have ready screens for each player
 - Change the speed of the ball or paddles
 - Change the scale of the time
+
+---
+
+|Back: [Exercise 4: time-based functions and how they are implemented under the hood](../exercises/time_functions/tutorial.md) | [Top](../../README.md) |
+|---|---|

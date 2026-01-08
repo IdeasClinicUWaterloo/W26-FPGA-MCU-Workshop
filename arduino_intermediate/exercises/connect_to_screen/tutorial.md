@@ -83,3 +83,9 @@ delay(15);
 
 ## Challenge 
 Add the code necessary to display a game time in the format: “MM:SS” where MM are the number of minutes and SS are the number of seconds. For now, just display “00:00”. We will set up a timer to include the game time later in the workshop. 
+
+---
+
+|Back: [Building the circuit for Pong](../../00_overview.md) | [Top](../../README.md) |Next: [Exercise 2: button polling](../button_polling/tutorial.md)|
+|---|---|---|
+

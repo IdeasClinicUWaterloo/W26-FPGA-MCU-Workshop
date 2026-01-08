@@ -51,3 +51,8 @@ delay(1000);
 
 After you’ve confirmed the interrupt works and turns off the LED temporarily, remove the delay(1000) statement from loop().
 When creating the function buttonInterrupt() or any interrupt function, do not use loops or delays. The interrupt must be short and quick so as to return to the main loop of the code as quickly as possible.  In Pong, we will be using an interrupt to create a pause button. The pause button will interrupt the main game loop and enter the game into a pause state, where it will wait for a second button press to continue back to the main game. 
+
+---
+
+|Back: [Exercise 2: button polling](../button_polling/tutorial.md) | [Top](../../README.md) |Next: [Exercise 4: time based functions and how they are implemented under the hood](../time_functions/tutorial.md)|
+|---|---|---|

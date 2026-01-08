@@ -49,3 +49,8 @@ This code will compare the state of the button to the state on the previous loop
 
 ## Challenge
 Add code to your project to read the state of button 2. Test that you can control the on-board LED with button 2 as well. After you complete this challenge, comment the code for writing to LED_BUILTIN based on the buttons.
+
+---
+
+|Back: [Exercise 1: connecting to the display](../connect_to_screen/tutorial.md) | [Top](../../README.md) |Next: [Exercise 3: interrupts](../interrupts/tutorial.md)|
+|---|---|---|
