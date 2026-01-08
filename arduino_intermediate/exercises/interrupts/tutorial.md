@@ -35,7 +35,10 @@ pinMode(BTN_PAUSE, INPUT_PULLUP);
 
 attachInterrupt(digitalPinToInterrupt(BTN_PAUSE), buttonInterrupt, CHANGE);
 
-/* attachInterrupt takes 3 values; digitalPinToInterrupt(pin) declares which pin to attach the interupt. The 2nd value is the interrupt function which must return void. The final value is the interrupt configuration. CHANGE will trigger the interrupt when the interruptPin changes state. FALLING will trigger when the pin changes from 1 to 0 – RISING will trigger when the state changes from 0 to 1. */
+/* attachInterrupt takes 3 values; digitalPinToInterrupt(pin) declares which pin to attach the interupt. 
+The 2nd value is the interrupt function which must return void. The final value is the interrupt configuration. 
+CHANGE will trigger the interrupt when the interruptPin changes state. 
+FALLING will trigger when the pin changes from 1 to 0 – RISING will trigger when the state changes from 0 to 1. */
 ````
 
 ### Loop Code
