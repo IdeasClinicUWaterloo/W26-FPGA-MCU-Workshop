@@ -25,8 +25,16 @@ These concepts will be used to create a simple, 2-player version of the game Pon
 
 # Table of Contents
 
+This workshop is broken up into four activities.
+Each activity will introduce you to one key concept.
+After you complete each activity, you will have the knowhow to create your own Pong game.
+
 1. [Building the circuit for Pong](00_overview.md)
-1. [What we will code and the skeleton](01_checklist.md)
+2. [Exercise 1: connecting to the screen](exercises/connect_to_screen/tutorial.md)
+3. [Exercise 2: button polling](exercises/button_polling/tutorial.md)
+4. [Exercise 3: interrupts](exercises/interrupts/tutorial.md)
+5. [Exercise 4: time-based functions and how they are implemented under the hood](exercises/time_functions/tutorial.md)
+6. [Build your own pong!](implementing_pong/instructions.md)
 
 ---
 Next: [Building the circuit for Pong](00_overview.md)
