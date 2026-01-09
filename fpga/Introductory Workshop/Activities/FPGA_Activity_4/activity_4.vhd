@@ -32,7 +32,7 @@ BEGIN
     -- Main process to handle input conversion
     PROCESS (SW)
 	 
-		  VARIABLE temp_signed : INTEGER RANGE -512 TO 511;
+		VARIABLE temp_signed : INTEGER RANGE -512 TO 511;
         VARIABLE temp_abs : INTEGER RANGE 0 TO 512;
         VARIABLE temp : INTEGER RANGE 0 TO 512;
         VARIABLE hundreds : INTEGER RANGE 0 TO 9;
@@ -42,7 +42,7 @@ BEGIN
     
 	 BEGIN
         
-		  -- Convert input (signed 9-bit number with SW(9) as sign indicator)
+		-- Convert input (signed 9-bit number with SW(9) as sign indicator)
 		  
 
         
@@ -59,10 +59,10 @@ BEGIN
 		  
         
 
-		  --HEX3 assignment (sign to seven segment function)
+		--HEX3 assignment (sign to seven segment function)
 		  
 		  
-		  --HEX2, HEX1, HEX0 assignment (digit to seven segment function)
+	    --HEX2, HEX1, HEX0 assignment (digit to seven segment function)
 		  
 		          
     END PROCESS;

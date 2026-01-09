@@ -16,12 +16,6 @@ end activity_3;
 architecture Behavioral of activity_3 is
     
 	--SIGNAL declarations
-	
-	 
-   -- FUNCTION declaration: Convert Sum and Carry Signals to 7-Segment
-
-	
-	
 
     
 begin

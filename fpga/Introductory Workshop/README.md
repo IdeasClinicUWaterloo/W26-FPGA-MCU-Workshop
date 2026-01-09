@@ -1,3 +1,8 @@
+---
+title: 'FPGA Introductory Workshop'
+author: '[Your Name/Organization]'
+---
+
 # Welcome to the FPGA Introductory Workshop!
 
 This introductory workshop will teach you the fundamentals of VHDL and FPGAs using Quartus.
@@ -19,14 +24,14 @@ If you haven't installed Quartus yet:
 # Table of Contents
 
 This workshop is broken up into four activities.
-Each activity will introduce you to new VHDL concepts and help you apply your knowledge from completed activites.
+Each activity will introduce you to key FPGA design concepts.
 
 1. [Introduction to FPGAs and Quartus](00_introduction.md)
 2. [Setting up your project](01_project_setup.md)
-3. [Activity 1: Creating a Full Adder](activity_1.md)
-4. [Activity 2: Seven Segment Priority Display](activity_2.md)
-5. [Activity 3: Displaying Digital Circuit Results](activity_3.md)
-6. [Activity 4: Binary to Decimal Conversion](activity_4.md)
+3. [Activity 1: Creating a Full Adder](Activities/activity_1.md)
+4. [Activity 2: Seven Segment Priority Display](Activities/activity_2.md)
+5. [Activity 3: Displaying Digital Circuit Results](Activities/activity_3.md)
+6. [Activity 4: Binary to Decimal Conversion](Activities/activity_4.md)
 
 ---
 Next: [Introduction to FPGAs and Quartus](00_introduction.md)
