@@ -97,56 +97,6 @@ end Behavioral;
 
 The goal of this activity is to input a 10-bit signed number in binary, using the switches on the FPGA, and output the number in decimal form on the seven-segment display.
 
-### Background
-
-#### What is Binary?
-
-Binary is a number system that uses only two digits:
-
-- 0 means off
-- 1 means on
-
-In contrast to the decimal system (which uses digits 0–9), binary only uses 0 and 1. This is perfect for digital electronics because every signal in a circuit is either low voltage (off) or high voltage (on).
-
-#### Why Do We Use Binary in Circuits?
-
-Each input device on your FPGA board — like a switch — can be in one of two states:
-
-- Switch up → 1 (on)
-- Switch down → 0 (off)
-
-When you flip switches, you create binary numbers. These binary inputs go into your circuit, and the logic you write in VHDL decides what happens next (like turning on LEDs or showing numbers on a display).
-
-#### Example: Binary Numbers with Switches
-
-If you have two switches:
-
-SW(1) and SW(0)
-
-The combination of their states creates these binary values:
-
-| SW(1) | SW(0) | Binary | Decimal Meaning |
-|-------|-------|--------|-----------------|
-| 0 | 0 | 00 | 0 |
-| 0 | 1 | 01 | 1 |
-| 1 | 0 | 10 | 2 |
-| 1 | 1 | 11 | 3 |
-
-Each place in binary represents a power of 2. So just like decimal is based on 10s, binary is based on 2s:
-
-![Binary Number System](assets/binary_system.png)
-
-### Elements of your VHDL file
-
-For the architecture of this activity, start by defining the following signals:
-
-Integer type signals
-- One to carry the signed value
-- One to carry the absolute value
-- Signals for the values of the hundreds, tens, and ones places
-
-A std_logic type signal for the sign bit
-
 ### Generating Digits
 
 Create a function which takes an integer type input variable, returns a standard logic vector type, and matches it to the seven-digit binary number that will drive the seven-segment display correctly.

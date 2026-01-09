@@ -18,6 +18,8 @@ ENTITY activity_4 IS
 END activity_4;
 
 ARCHITECTURE Behavioral OF activity_4 IS
+
+    --SIGNAL declarations
     
     -- FUNCTION: Convert digit (0-9) to 7-segment display
 

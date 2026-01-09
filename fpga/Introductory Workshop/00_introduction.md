@@ -8,6 +8,45 @@ FPGA stands for Field-Programmable Gate Array. It's a special kind of chip that 
 
 VHDL stands for Very High-Speed Integrated Circuit Hardware Description Language. VHDL is an HDL (Hardware Description Language) and is used to program digital circuits. Unlike Python, Java and C, which use whatever hardware they are on to implement software, HDLs describe the function and structure of a digital circuit hardware. Like any other programming language you have seen, VHDL has a particular syntax that must be followed.
 
+## Binary
+
+#### What is Binary?
+
+Binary is a number system that uses only two digits:
+
+- 0 means off
+- 1 means on
+
+In contrast to the decimal system (which uses digits 0–9), binary only uses 0 and 1. This is perfect for digital electronics because every signal in a circuit is either low voltage (off) or high voltage (on).
+
+#### Why Do We Use Binary in Circuits?
+
+Each input device on your FPGA board — like a switch — can be in one of two states:
+
+- Switch up → 1 (on)
+- Switch down → 0 (off)
+
+When you flip switches, you create binary numbers. These binary inputs go into your circuit, and the logic you write in VHDL decides what happens next (like turning on LEDs or showing numbers on a display).
+
+#### Example: Binary Numbers with Switches
+
+If you have two switches:
+
+SW(1) and SW(0)
+
+The combination of their states creates these binary values:
+
+| SW(1) | SW(0) | Binary | Decimal Meaning |
+|-------|-------|--------|-----------------|
+| 0 | 0 | 00 | 0 |
+| 0 | 1 | 01 | 1 |
+| 1 | 0 | 10 | 2 |
+| 1 | 1 | 11 | 3 |
+
+Each place in binary represents a power of 2. So just like decimal is based on 10s, binary is based on 2s:
+
+![Binary Number System](assets/binary_system.png)
+
 ## Inputs and Outputs
 
 In VHDL, inputs and outputs are how your circuit communicates with the outside world. When you describe a digital circuit in VHDL, you need to tell the computer what signals come in (inputs) and what signals go out (outputs). This is done in the entity section of your VHDL code.
@@ -20,7 +59,9 @@ Outputs are values that the circuit sends out (like turning on a light or sendin
 
 An entity is a VHDL building block that defines all the inputs and outputs of the overall system. Think of it as a black box which is a representation of a system that relies entirely on inputs and outputs.
 
-There can only be one entity definition per file. The name of an entity should always be the file name. Notice that only the last element in the list is not followed by a semicolon – this is relevant to the syntax and occurs in other blocks. Everything inside the PORT brackets defines the inputs and outputs of the VHDL file.
+There can only be one entity definition per file. <b>The name of an entity should always be the file name.</b>
+
+Notice that only the last element in the list is not followed by a semicolon – this is relevant to the syntax and occurs in other blocks. Everything inside the PORT brackets defines the inputs and outputs of the VHDL file.
 
 In the image below, inputs and outputs are declared as std_logic which means they can be 0 or 1 value.
 
