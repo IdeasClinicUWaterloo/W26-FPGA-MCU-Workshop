@@ -1,0 +1,105 @@
+Assembler report for fpga_beginner_activity_4
+Thu Jan  8 17:21:27 2026
+Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: C:/Users/bluef/Desktop/MCUFPGAWRKSP/W26-FPGA-MCU-Workshop/fpga/Introductory Workshop/FPGA Intro Activity 4/output_files/fpga_beginner_activity_4.sof
+  6. Assembler Device Options: C:/Users/bluef/Desktop/MCUFPGAWRKSP/W26-FPGA-MCU-Workshop/fpga/Introductory Workshop/FPGA Intro Activity 4/output_files/fpga_beginner_activity_4.pof
+  7. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Thu Jan  8 17:21:27 2026 ;
+; Revision Name         ; fpga_beginner_activity_4              ;
+; Top-level Entity Name ; activity_4                            ;
+; Family                ; Cyclone V                             ;
+; Device                ; 5CGXFC5C6F27C7                        ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                                            ;
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                                            ;
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/bluef/Desktop/MCUFPGAWRKSP/W26-FPGA-MCU-Workshop/fpga/Introductory Workshop/FPGA Intro Activity 4/output_files/fpga_beginner_activity_4.sof ;
+; C:/Users/bluef/Desktop/MCUFPGAWRKSP/W26-FPGA-MCU-Workshop/fpga/Introductory Workshop/FPGA Intro Activity 4/output_files/fpga_beginner_activity_4.pof ;
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/bluef/Desktop/MCUFPGAWRKSP/W26-FPGA-MCU-Workshop/fpga/Introductory Workshop/FPGA Intro Activity 4/output_files/fpga_beginner_activity_4.sof ;
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                                       ;
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x007CDE52                                                                                                                                                    ;
+; Checksum       ; 0x007CDE52                                                                                                                                                    ;
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/bluef/Desktop/MCUFPGAWRKSP/W26-FPGA-MCU-Workshop/fpga/Introductory Workshop/FPGA Intro Activity 4/output_files/fpga_beginner_activity_4.pof ;
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                                                                                   ;
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode      ; 0x00000000                                                                                                                                                ;
+; Checksum           ; 0xECDF746E                                                                                                                                                ;
+; Compression Ratio  ; 3                                                                                                                                                         ;
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Processing started: Thu Jan  8 17:21:20 2026
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off fpga_beginner_activity_4 -c fpga_beginner_activity_4
+Info (125069): Default assignment values were changed in the current version of the Quartus Prime software -- changes to default assignments values are contained in file c:/altera_lite/25.1std/quartus/bin64/assignment_defaults.qdf
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 5117 megabytes
+    Info: Processing ended: Thu Jan  8 17:21:27 2026
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
+
+

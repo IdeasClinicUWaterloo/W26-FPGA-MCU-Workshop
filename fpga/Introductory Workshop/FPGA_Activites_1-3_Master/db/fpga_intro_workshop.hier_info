@@ -1,0 +1,101 @@
+|beginner_top
+SW[0] => activity_1:ACT1.SW[0]
+SW[0] => activity_3:ACT3.SW[0]
+SW[1] => activity_1:ACT1.SW[1]
+SW[1] => activity_3:ACT3.SW[1]
+SW[2] => activity_1:ACT1.SW[2]
+SW[2] => activity_3:ACT3.SW[2]
+SW[3] => ~NO_FANOUT~
+SW[4] => activity_2:ACT2.SW[0]
+SW[5] => activity_2:ACT2.SW[1]
+SW[6] => activity_2:ACT2.SW[2]
+SW[7] => activity_2:ACT2.SW[3]
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+LEDR[0] << activity_1:ACT1.LED[0]
+LEDR[1] << activity_1:ACT1.LED[1]
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+HEX0[0] << activity_2:ACT2.HEX0[0]
+HEX0[1] << activity_2:ACT2.HEX0[1]
+HEX0[2] << activity_2:ACT2.HEX0[2]
+HEX0[3] << activity_2:ACT2.HEX0[3]
+HEX0[4] << activity_2:ACT2.HEX0[4]
+HEX0[5] << activity_2:ACT2.HEX0[5]
+HEX0[6] << activity_2:ACT2.HEX0[6]
+HEX1[0] << activity_3:ACT3.HEX1[0]
+HEX1[1] << activity_3:ACT3.HEX1[1]
+HEX1[2] << activity_3:ACT3.HEX1[2]
+HEX1[3] << activity_3:ACT3.HEX1[3]
+HEX1[4] << activity_3:ACT3.HEX1[4]
+HEX1[5] << activity_3:ACT3.HEX1[5]
+HEX1[6] << activity_3:ACT3.HEX1[6]
+
+
+|beginner_top|activity_1:ACT1
+SW[0] => LED.IN0
+SW[0] => LED.IN0
+SW[0] => LED.IN0
+SW[1] => LED.IN1
+SW[1] => LED.IN1
+SW[1] => LED.IN0
+SW[2] => LED.IN1
+SW[2] => LED.IN1
+SW[2] => LED.IN1
+LED[0] <= LED.DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= LED.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|beginner_top|activity_2:ACT2
+SW[0] => SEG.OUTPUTSELECT
+SW[0] => SEG.OUTPUTSELECT
+SW[0] => SEG.OUTPUTSELECT
+SW[0] => SEG.OUTPUTSELECT
+SW[0] => SEG.OUTPUTSELECT
+SW[0] => SEG.OUTPUTSELECT
+SW[1] => SEG.OUTPUTSELECT
+SW[1] => SEG.OUTPUTSELECT
+SW[1] => SEG.OUTPUTSELECT
+SW[1] => SEG.OUTPUTSELECT
+SW[1] => SEG.DATAA
+SW[2] => SEG.OUTPUTSELECT
+SW[2] => SEG.OUTPUTSELECT
+SW[2] => SEG.OUTPUTSELECT
+SW[2] => SEG.DATAA
+SW[3] => SEG.DATAA
+SW[3] => SEG.DATAA
+SW[3] => SEG.DATAA
+HEX0[0] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= <GND>
+HEX0[2] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|beginner_top|activity_3:ACT3
+SW[0] => SUM.IN0
+SW[0] => SUM.IN0
+SW[0] => SUM.IN0
+SW[1] => SUM.IN1
+SW[1] => SUM.IN1
+SW[1] => SUM.IN0
+SW[2] => SUM.IN1
+SW[2] => SUM.IN1
+SW[2] => SUM.IN1
+HEX1[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[1] <= <GND>
+HEX1[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[4] <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[5] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[6] <= SUM[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
