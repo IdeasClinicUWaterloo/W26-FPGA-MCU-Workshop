@@ -1,8 +1,3 @@
----
-title: 'FPGA Introductory Workshop'
-author: '[Your Name/Organization]'
----
-
 # Welcome to the FPGA Introductory Workshop!
 
 This introductory workshop will teach you the fundamentals of VHDL and FPGAs using Quartus.
