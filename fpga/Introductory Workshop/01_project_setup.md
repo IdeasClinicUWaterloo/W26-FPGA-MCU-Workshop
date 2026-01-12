@@ -175,13 +175,13 @@ For the next three activities (Activities 1-3), you will be working within a sin
 
 ### Opening the Project
 
-1. Navigate to the `Introductory Workshop/Activities_Master/FPGA_Activities_1-3_Master` folder in your downloaded workshop files.
+1. Navigate to the `Introductory Workshop/Activities/FPGA_Activities_1-3` folder in github and download it.
 
 2. Open Intel Quartus Prime.
 
 3. In Quartus, go to **File → Open Project**.
 
-4. Browse to the `FPGA_Activities_1-3_Master` folder and open the project file (`.qpf` extension).
+4. Browse to the `FPGA_Activities_1-3` folder and open the project file (`.qpf` extension).
 
 ### Setting the Top-Level Entity
 
