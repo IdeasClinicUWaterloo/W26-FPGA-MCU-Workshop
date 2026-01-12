@@ -1,8 +1,0 @@
--- generates timing signals for a 1280x720 @ 60hz video output
--- also gives you a one-tick 'frame_start' pulse at the top-left pixel
-
-entity video_timing is
-	port (
-		
-	);
-end video_timing;
