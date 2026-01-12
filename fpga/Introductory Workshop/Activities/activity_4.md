@@ -4,13 +4,13 @@ Activity 4 uses a separate project folder and introduces binary to decimal conve
 
 ## Opening the Activity 4 Project
 
-1. Navigate to the `Introductory Workshop/Activities_Master/FPGA_Activities_4_Master` folder in your downloaded workshop files.
+1. Navigate to the `Introductory Workshop/Activities_Master/FPGA_Activity_4` folder in GitHub and download it.
 
 2. Open Intel Quartus Prime (if not already open).
 
 3. In Quartus, go to **File → Open Project**.
 
-4. Browse to the `FPGA_Activities_4_Master` folder and open the project file (`.qpf` extension).
+4. Browse to the `FPGA_Activity_4` folder and open the project file (`.qpf` extension).
 
 ## Setting the Top-Level Entity
 
