@@ -4,7 +4,7 @@ Activity 4 uses a separate project folder and introduces binary to decimal conve
 
 ## Opening the Activity 4 Project
 
-1. Navigate to the `Introductory Workshop/Activitis/FPGA_Activity_4` folder in GitHub and download it.
+1. Navigate to the `Introductory Workshop/Activities/FPGA_Activity_4` folder in GitHub and download it.
 
 2. Open Intel Quartus Prime (if not already open).
 
