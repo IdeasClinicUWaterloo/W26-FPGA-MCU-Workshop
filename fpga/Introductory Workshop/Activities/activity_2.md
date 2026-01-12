@@ -2,7 +2,7 @@
 
 ## Part 2: Seven-Segment Displays
 
-![Seven Segment Display](assets/seven_segment.png)
+![Seven Segment Display](../assets/seven_segment.png)
 
 To drive the seven-segment display, a seven-digit binary number, formatted as "abcdef", is assigned to the display, using the following syntax.
 
@@ -22,13 +22,13 @@ HEX0 <= "1111000";
 
 A process is a section of the code that will run whenever it is triggered. This trigger could be whenever a button is triggered, a switch is turned, or the value of an internal signal is changed. Variables to be used within processes are declared outside of the core code of the process.
 
-![Process Example](assets/process_example.png)
+![Process Example](../assets/process_example.png)
 
 ## If Else Statement
 
 An if statement is used to make decisions based on certain conditions, just like it is done in regular programming languages. It allows you to select between different actions or signal assignments depending on whether a condition is true or false.
 
-![If Else Example](assets/if_else_example.png)
+![If Else Example](../assets/if_else_example.png)
 
 ## Example Code
 
@@ -76,7 +76,8 @@ Use a series of if statements to determine which switch is turned on, giving pri
 
 Finally, ensure the output is assigned to the 7-segment display port HEX0, so the number appears on the screen.
 
-**NOTE While you will be writing code to test from sw(3) downto sw(0), the top level file is going to shift these to sw(7) downto sw(4) when you're testing it on the physical board.
+#### **NOTE While you will be writing code to test from sw(3) downto sw(0), the top level file is going to shift these to sw(7) downto sw(4) when you're testing it on the physical board.
+
 ---
 
 |Back: [Activity 1](activity_1.md) | [Top](../README.md) |Next: [Activity 3](activity_3.md)|

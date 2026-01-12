@@ -45,7 +45,7 @@ The combination of their states creates these binary values:
 
 Each place in binary represents a power of 2. So just like decimal is based on 10s, binary is based on 2s:
 
-![Binary Number System](assets/binary_system.png)
+![Binary Number System](assets/binary_to_decimal.png)
 
 ## Inputs and Outputs
 
@@ -61,11 +61,11 @@ An entity is a VHDL building block that defines all the inputs and outputs of th
 
 There can only be one entity definition per file. <b>The name of an entity should always be the file name.</b>
 
-Notice that only the last element in the list is not followed by a semicolon – this is relevant to the syntax and occurs in other blocks. Everything inside the PORT brackets defines the inputs and outputs of the VHDL file.
-
 In the image below, inputs and outputs are declared as std_logic which means they can be 0 or 1 value.
 
 ![Entity Example](assets/entity_example.png)
+
+Notice that only the last element in the list is not followed by a semicolon – this is relevant to the syntax and occurs in other blocks. Everything inside the PORT brackets defines the inputs and outputs of the VHDL file.
 
 ## Architectural Body
 
@@ -101,6 +101,8 @@ The assignment operator in VHDL is "<=" and it is used to assign a value to a si
 | XNOR | Exclusive NOR | Y <= A XNOR B; |
 
 NOTE: NAND and NOR gates can also be expressed as an AND or OR gate, respectively, followed by a NOT gate, with intermediate values stored using signals. You are also not limited to a single operation per line.
+
+![nand_example](assets/nand_example.png)
 
 ## Sample VHDL Program
 

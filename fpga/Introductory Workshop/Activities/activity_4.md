@@ -28,13 +28,13 @@ Once the project is open, you need to set the correct top-level entity:
 
 A function is a reusable block of code that executes a specific computation and returns a value. VHDL functions are like regular programming languages.
 
-![Function Example](assets/function_example.png)
+![Function Example](../assets/function_example.png)
 
 ### Case Statement
 
 A case statement is like a multiple-choice decision. It checks the value of a signal or variable and executes different code depending on the value.
 
-![Case Statement Example](assets/case_statement_example.png)
+![Case Statement Example](../assets/case_example.png)
 
 ### Variables
 

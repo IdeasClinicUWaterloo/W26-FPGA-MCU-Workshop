@@ -27,39 +27,41 @@ END Behavioral;
 
 ## Create a new project
 
-Launch Quartus Prime from your computer.
+1. Launch Quartus Prime from your computer.
+2. Create a New Project
+    * Click <b>File > New Project Wizard</b>
 
-Click File > New Project Wizard
+    ![New Project Wizard](assets/new_project_wizard.png)
 
-![New Project Wizard](assets/new_project_wizard.png)
+    * Click Next to start the wizard. You should see a screen that looks like this:
 
-Click Next to start the wizard. You should see a screen that looks like this:
+    ![Project Wizard Start](assets/project_wizard_start.png)
 
-![Project Wizard Start](assets/project_wizard_start.png)
+3. Setup Wizard
+    1. Create a folder named <b>FPGA_Projects\BooleanExample</b> in your C drive where your project will be saved. (C:\FPGA_Projects\BooleanExample)
 
-Create a folder named FPGA_Projects\BooleanExample in your C drive where your project will be saved. (C:\FPGA_Projects\BooleanExample)
+    2. Give your project the name: <b>BooleanExample</b>
 
-Give your project the name: BooleanExample
+    3. Click <b>Next</b>
 
-Click Next
+    ![Project Folder](assets/project_folder.png)
 
-![Project Folder](assets/project_folder.png)
+    4. Select <b>Empty Project</b> and click <b>Next</b>.
 
-Select Empty Project and click Next.
+    ![Empty Project](assets/empty_project.png)
 
-![Empty Project](assets/empty_project.png)
+    5. Click <b>Next</b>. We will skip the Add Files section.
 
-Click Next. We will skip the Add Files section.
+    Now you need to choose your specific FPGA chip. We use the Cyclone V GX Starter Kit.
 
-Now you need to choose your specific FPGA chip. We use the Cyclone V GX Starter Kit.
+    6. Go to the <b>BOARD</b> tab and select Cyclone V GX Starter Kit
+    ![Board Select](assets/board_select.png)
+    7. Click <b>Next</b>
 
-Go to the BOARD tab and select Cyclone V GX Starter Kit
+    8. Ensure the '<b>Simulation</b>' has '<b>Questa Intel FPGA</b>' and '<b>VHDL</b>' selected. 'Verilog HDL' may be selected by default make sure you change this.
 
-Click Next
-
-Ensure the 'Simulation' has 'Questa Intel FPGA' and 'VHDL' selected. 'Verilog HDL' may be selected by default make sure you change this.
-
-Click Next then Click Finish to complete project setup.
+    9. Click <b>Next</b> 
+    10. Click <b>Finish</b> to complete project setup.
 
 ## Create a New VHDL File
 
