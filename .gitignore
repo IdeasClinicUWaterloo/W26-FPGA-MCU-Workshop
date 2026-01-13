@@ -1,4 +1,8 @@
 *~
+*.docx
+*.pptx
+*.xlsx
+*#
 
 # Quartus files
 # Credit: https://gist.github.com/nhasbun/71918796044b7ba89d6662133495f754
@@ -49,3 +53,4 @@
 *.tcl
 *sopc_*
 PLLJ_PLLSPE_INFO.txt # The generated PLL specification file
+W26-FPGA-MCU-Workshop/blob/main/Introductory Workshop/README.md
