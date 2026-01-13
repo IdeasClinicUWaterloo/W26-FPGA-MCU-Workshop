@@ -1,5 +1,5 @@
 ---
-title: 'Setting up QUartus'
+title: 'Setting up Quartus'
 author: 'Punit Shah, Karnan Thamilchelvan, Benjamin Zaionz, Avi Bhadore, Michelle Chen, Silas Ifeanyi, Michael McPhee, Nancy Nelson, Chris Rennick'
 ---
 
@@ -15,7 +15,7 @@ If you're here, you want to get the necessary tools on your computer to interact
 2. Select version 24.1(Latest) from the drop-down menu. 
 3. Verify that you have selected the following parameters: **FPGA Development < Quartus Prime Lite < 24.1 (Latest) < Windows**
 
-![Quartus installer dropdown](assets/quartus_download_parameters.png)
+![Quartus installer dropdown](assets/ip_directory.png)
 
 4. Press the download button and accept the legal disclaimer when prompted.  
 
