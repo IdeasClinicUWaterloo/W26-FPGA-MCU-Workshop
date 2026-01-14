@@ -8,21 +8,21 @@ This code can be pasted into a new sketch to demonstrate button polling. Once yo
 
 
 ### Includes
-````arduino
+````cpp
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 ````
 
 ### Definitions
-````arduino
+````cpp
 const int BTN_P1 = 4;
 bool lastBtnP1 = HIGH;
 ````
 
 
 ### Setup Code
-````arduino
+````cpp
 pinMode(BTN_P1, INPUT_PULLUP);
 pinMode(LED_BUILTIN, OUTPUT);
 // Declares our button1Pin as an input
@@ -30,7 +30,7 @@ pinMode(LED_BUILTIN, OUTPUT);
 ````
 
 ### Loop Code
-````arduino 
+````cpp 
 bool btnP1 = digitalRead(BTN_P1);
 // digitalRead() takes in the button input
 // LED_BUILT_IN is the LED built into every Arduino Board. It can also be accessed by digitalPin 13

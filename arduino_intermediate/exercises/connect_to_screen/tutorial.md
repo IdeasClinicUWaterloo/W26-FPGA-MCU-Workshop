@@ -15,7 +15,7 @@ This code can be pasted into a new sketch. Once you understand the process of wr
 
 
 ### Includes
-````arduino
+````cpp
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
@@ -23,7 +23,7 @@ This code can be pasted into a new sketch. Once you understand the process of wr
 
 
 ### Definitions 
-````arduino
+````cpp
 // Screen Variables
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
@@ -49,7 +49,7 @@ int ballY = 32;
 ````
 
 ### Setup Code
-````arduino
+````cpp
 display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
 display.clearDisplay();
 display.setTextSize(1);
@@ -57,7 +57,7 @@ display.setTextColor(SSD1306_WHITE);
 ````
 
 ### Loop Code
-````arduino 
+````cpp 
 // Display must first be cleared 
 display.clearDisplay();
 
