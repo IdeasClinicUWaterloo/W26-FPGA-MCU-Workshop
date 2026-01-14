@@ -33,7 +33,7 @@ We recommend using Microsoft Windows to run Quartus. Please install Quartus on a
 
 ![Check the USB Blaster II checkbox](assets/usb_blaster_install.png)
 
-8. Agree to the Intel License Agreement and click **Download and Install**. This installation will take a while to complete. Please be patient.
+9. Agree to the Intel License Agreement and click **Download and Install**. This installation will take a while to complete. Please be patient.
 
 ![Quartus installer agreement](assets/quartus_install_agreement.png)
 
@@ -49,7 +49,7 @@ We recommend using Microsoft Windows to run Quartus. Please install Quartus on a
 
 ## Installing Drivers Manually for Quartus
 
-For Quartus to detect your FPGA, you will need to install the USB-Blaster drivers. 
+*If you were not given the option to install the USB Blaster II driver automatically, please follow the instructions below*.
 
 1. Your FPGA will need to be plugged into power, as well as your computer to do this. **MAKE SURE THAT THE USB-B END OF YOUR CABLE IS PLUGGED INTO THE PORT ON YOUR FPGA LABELED AS “USB-Blaster” (The one that is closest to the edge of the board).**
 2. Navigate to Device Manager. 
