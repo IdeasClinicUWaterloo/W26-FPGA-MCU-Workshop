@@ -42,7 +42,9 @@ We recommend using Microsoft Windows to run Quartus. Please install Quartus on a
 9. Once the download and installation of Quartus is complete, you should see a window named "Install USB Blaster" by Altera.
    Follow all steps in the new prompt window.
 
-10. Once the download and installation are complete, close the window and open up Quartus. You should see a screen that looks like this:
+![Altera USB Blaster driver installation prompt](assets/driver_prompt.png)
+
+11. Once the download and installation are complete, close the window and open up Quartus. You should see a screen that looks like this:
 
 ![Quartus fully installed](assets/quartus_fully_installed.png)
 
