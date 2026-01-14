@@ -34,5 +34,18 @@ scopes.
 ### Note on computer architecture: 
 If you happen to be using an ARM based Windows machine, you will most likely be unable to proceed on your device. Please either partner up with someone who uses a different microarchitecture, or request an IdeasClinic laptop from the instructional team.
 
+# Table of Contents
+
+This workshop is broken up into four activities.
+Each activity will introduce you to one key concept.
+After you complete each activity, you will have the knowhow to create your own Pong game.
+
+1. [Building the circuit for Pong](00_overview.md)
+2. [Exercise 1: connecting to the screen](exercises/connect_to_screen/tutorial.md)
+3. [Exercise 2: button polling](exercises/button_polling/tutorial.md)
+4. [Exercise 3: interrupts](exercises/interrupts/tutorial.md)
+5. [Exercise 4: time-based functions and how they are implemented under the hood](exercises/time_functions/tutorial.md)
+6. [Build your own pong!](implementing_pong/instructions.md)
+
 ---
 Next: [Activity one, digital inputs and outputs](00_digital.md)
