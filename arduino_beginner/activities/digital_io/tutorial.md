@@ -62,19 +62,19 @@ Now you’re ready to create the project (aka sketch) and write the code to cont
 Now it’s time to write your code. We’ve written it for you this time, so please copy and paste this code into the Arduino IDE:
 
 ### Definitions
-````arduino
+````cpp
 const int buttonPin = 3;
 const int ledPin = 2;
 ````
 
 ### Setup
-````arduino
+````cpp
 pinMode(buttonPin, INPUT); 
 pinMode(ledPin, OUTPUT);
 ````
 
 ### Loop
-````arduino
+````cpp
 int state = digitalRead(buttonPin);
 if (state == HIGH) {
     digitalWrite(ledPin, HIGH);
@@ -168,5 +168,5 @@ The LED should stay on after the "On" button is released and only turn off when 
 
 This behavior is known as a latching system -  the LED "remembers" its state. 
 
-|Back: [Background](../../00_background.md) | [Top](../../README.md) | [Activity 2: Analog Inputs and UART](activities/digital_io/tutorial.md) |
+|Back: [Background](../../00_background.md) | [Top](../../README.md) | [Activity 2: Analog Inputs and UART](../analog_and_uart/tutorial.md) |
 |---|---|---|

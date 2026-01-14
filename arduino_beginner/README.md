@@ -40,12 +40,10 @@ This workshop is broken up into four activities.
 Each activity will introduce you to one key concept.
 After you complete each activity, you will have the knowhow to create your own Pong game.
 
-1. [Building the circuit for Pong](00_overview.md)
-2. [Exercise 1: connecting to the screen](exercises/connect_to_screen/tutorial.md)
-3. [Exercise 2: button polling](exercises/button_polling/tutorial.md)
-4. [Exercise 3: interrupts](exercises/interrupts/tutorial.md)
-5. [Exercise 4: time-based functions and how they are implemented under the hood](exercises/time_functions/tutorial.md)
-6. [Build your own pong!](implementing_pong/instructions.md)
+1. [Background Information](00_background.md)
+2. [Activity 1: Digital Inputs and Outputs](activities/digital_io/tutorial.md)
+3. [Activity 2: Analog Inputs and UART](activities/analog_and_uart/tutorial.md)
+4. [Activity 3: Pulse Width Modulation](activities/pulse_width_modulation/tutorial.md)
 
 ---
 Next: [Activity one, digital inputs and outputs](00_digital.md)

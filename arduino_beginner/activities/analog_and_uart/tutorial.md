@@ -41,18 +41,18 @@ Refer to Figure 14 for the circuit’s wiring.
 Once again, the code is provided for you. There is no special configuration is required - just open the Arduino IDE and paste this code into a new sketch/project:
 
 ### Definitions
-````arduino
+````cpp
 int potPin = A0;
 int adcValue = 0;           
 ````
 
 ### Setup
-````arduino
+````cpp
 Serial.begin(9600);          
 ````
 
 ### Loop
-````arduino
+````cpp
 adcValue = analogRead(potPin);
 Serial.println(adcValue);
 delay(100);        
@@ -67,3 +67,7 @@ This code reads a variable voltage between 0V and 5V using analog input pin A0.
 
 ## Challenge
 Use a potentiometer to control the frequency of a blinking LED. See the Potentiometers section for how to use the potentiometer. The outer pins are connected to a voltage supply and ground, while the middle pin outputs a voltage between these two values, depending on the position of the dial.  
+
+
+|Back: [Activity 1: Inputs and Outputs](../digital_io/tutorial.md) | [Top](../../README.md) | [Activity 3: Pulse Width Modulation](../pulse_width_modulation/tutorial.md) |
+|---|---|---|

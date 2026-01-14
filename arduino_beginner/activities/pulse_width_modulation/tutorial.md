@@ -76,3 +76,7 @@ Modify the code from section 3.5 to create this very simple light show. As you v
 The following resources may be useful as you start to use an Arduino for other projects: 
 - [Resistor Color Code Calculator](https://www.calculator.net/resistor-calculator.html)
 - [Hints about Wiring for Your Electronics Projects](https://www.dummies.com/article/technology/electronics/general-electronics/stock-up-on-wire-for-your-electronics-projects-180328/) 
+
+
+|Back: [Activity 2: Analog Inputs and UART](../analog_and_uart/tutorial.md) | [Top](../../README.md)
+|---|---|
