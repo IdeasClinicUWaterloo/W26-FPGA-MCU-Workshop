@@ -31,18 +31,23 @@ We recommend using Microsoft Windows to run Quartus. Please install Quartus on a
 
 7. **Make sure to check the option "Launch USB Blaster II driver installation"** to easily install the programming tool we will use to "flash" the board.
 
+![Check the USB Blaster II checkbox](assets/usb_blaster_install.png)
+
 8. Agree to the Intel License Agreement and click **Download and Install**. This installation will take a while to complete. Please be patient.
 
 ![Quartus installer agreement](assets/quartus_install_agreement.png)
 
 ![Quartus download progress](assets/quartus_download_progress.png)
 
-9. Once the download and installation are complete, close the window and open up Quartus. You should see a screen that looks like this:
+9. Once the download and installation of Quartus is complete, you should see a window named "Install USB Blaster" by Altera.
+   Follow all steps in the new prompt window.
+
+10. Once the download and installation are complete, close the window and open up Quartus. You should see a screen that looks like this:
 
 ![Quartus fully installed](assets/quartus_fully_installed.png)
 
 
-## Installing Drivers for Quartus
+## Installing Drivers Manually for Quartus
 
 For Quartus to detect your FPGA, you will need to install the USB-Blaster drivers. 
 
