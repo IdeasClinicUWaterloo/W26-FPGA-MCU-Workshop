@@ -17,7 +17,7 @@ Instead of writing this component from scratch, we can use a pre-built, pre-test
 
 ![IP library directory list](assets/ip_directory_list.png)
 
-3. In the popup, choose a name for the generated IP variation (here, we chose “pll_74mhz”) and select the VHDL radio button. Then, press OK. 
+3. In the popup, choose a name for the generated IP variation (here, we chose `pll_74mhz`) and select the VHDL radio button. Then, press OK. 
 
 ![IP library directory popup](assets/ip_popup.png)
 
@@ -37,9 +37,8 @@ Instead of writing this component from scratch, we can use a pre-built, pre-test
 
 ![IP library variation popup](assets/ip_variation_popup.png)
 
+8. The PLL IP variation is now available to use as a component in the project. 
 
-The PLL IP variation is now available to use as a component in the project. 
-
-To see the generated design files, find the project navigator (on the left of the screen). In the dropdown menu at the top of the project navigator, select **IP Components**. Right click on the PLL component you just generated and select **Locate Node > Locate in Design File** to open the generated design file.  
+    To see the generated design files, find the project navigator (on the left of the screen). In the dropdown menu at the top of the project navigator, select **IP Components**. Right click on the PLL component you just generated and select **Locate Node > Locate in Design File** to open the generated design file.  
 
 ![IP component location](assets/ip_component_location.png)
