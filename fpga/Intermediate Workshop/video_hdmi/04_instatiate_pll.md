@@ -18,14 +18,14 @@ There are two parts to component instantiation: defining the component and insta
 
 ## How to Instantiate PLL in `hdmi_top.vhd`
 
-Before adding the PLL, recall the general structure of an architecture body.
+Before adding the PLL, recall the general structure of an architecture body. If you have forgotten what architectures are in VHDL, you can refer to the Introductory FPGA Workshop's [architectural body section](../../Introductory%20Workshop/00_introduction.md#architectural-body).
+
 
 In `hdmi_top.vhd`, the architecture body consists of:
 - A declaration section (before `begin`) for signals and component definitions
 - A logic section (between `begin` and `end`) for instantiation statements and signal assignments
 
 ![Architecture Body Format](../assets/arch_body_format.png)
-
 
 ### 1. Write the Component Definition
 
@@ -52,6 +52,8 @@ signal reset : STD_LOGIC;      -- resets input to the PLL
 signal clk_pixel : STD_LOGIC;  -- the 74.25 MHz clock output from the PLL
 signal pll_locked : STD_LOGIC; -- tells you when the PLL is stable and usable
 ````
+
+If you have forgotten signals in VHDL, you can refer to the [Introductory FPGA Workshop](../../Introductory%20Workshop/Activities/activity_1.md#signals). 
 
 ### 3. Drive the PLL Reset Signal
 
@@ -81,6 +83,12 @@ Instantiation tells Quartus to generate logic gates to implement the PLL, and ho
 
 In this case, we’re connecting an internal 50 MHz clock to the `refclk` port, our reset signal to the `rst` port, our pixel clock to the `outclk_0` port, and our PLL locked signal to the `locked` port. 
 
-To see this, open the RTL Viewer in Quartus and inspect the generated hardware connections: 
+### 5. Compile and Verify 
+Open the RTL Viewer in Quartus and inspect the generated hardware connections: 
 
 ![PLL block diagram](../assets/pll_block_diagram.png)
+
+If you have forgotten how to use the RTL viewer in Quartus, you can refer to the [Introductory FPGA Workshop](../../Introductory%20Workshop/Activities/activity_1.md#helpful-tip). 
+
+---
+Next: [Add Local VHDL files to Top-Level File](05_instatiate_local_vhdl.md)

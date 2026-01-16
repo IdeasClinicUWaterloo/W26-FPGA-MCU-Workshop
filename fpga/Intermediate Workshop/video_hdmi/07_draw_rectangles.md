@@ -2,7 +2,7 @@
 
 In this section, you will get an opportunity to write your own module and integrate it with the rest of the logic. We will write a module to help display a rectangle at an arbitrary position on-screen. 
 
-Later in the workshop, this same module will be reused to draw the **ball and paddles** for the game.
+Later in the workshop, this same module will be reused to draw the ball and paddles for the game.
 
 ## How Do Computer Graphics Work?
 
@@ -15,11 +15,15 @@ In this coordinate system, `(0,0)` is the top-left corner of the screen. The x-a
 ![Screen-space coordinate system](../assets/screen_coor_system.png)
 
 
-## Writing the `rect_display` VHDL Module
+## How to Implement  `rect_display`
 
-### 1. Create the `rect_display` component
+### 1. Create `rect_display.vhd`
 
-In Quartus, create a new VHDL file in the current project called `rect_display.vhd` and include the following: 
+In Quartus, create a new VHDL file in the current project called `rect_display.vhd`. If you have forgotten how to create new VHDL refer [here](../../Introductory%20Workshop/01_project_setup.md#create-a-new-vhdl-file). 
+
+### 2. Write VHDL for `rect_display` 
+
+Please include the following: 
 
 ### Library and packages
 
@@ -64,7 +68,7 @@ architecture procedural of rect_display is
     -- Fill in your logic here
 end procedural;
 ````
-#### Key notes: Conditional Assignment
+#### Helpful notes: Conditional Assignment
 
 It may be useful to know the syntax of conditional assignment, which allows conditional behavior without using a process:
 
@@ -94,7 +98,7 @@ signal on_rect : STD_LOGIC;
 ````
 
 ### 2.3 Instantiate `rect_display` component
-You need to now write the instantiation for a copy of your rectangle component (like you did for the PLL in Part 1). 
+You need to now write the instantiation for a copy of your rectangle component (like you did for the PLL). 
 
 ````vhdl
 test_rect : rect_display
@@ -128,3 +132,6 @@ The above example has a rectangle with the following bounds:
 
 ---
 If you can successfully display a rectangle, continue to the next part to implement our Pong game!
+
+---
+Next [Overview: Pong Game Play](../gameplay/08_gameplay_overview.md)

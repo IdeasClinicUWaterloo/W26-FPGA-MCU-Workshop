@@ -22,7 +22,7 @@ Unlike component instantiation, entity instantiation is a more direct way to use
 
 ### 1. Identify input and output signals
 
-We need to know what are the input and output signals for `video_timing`. We can do this by navigating to `video_timing` and looking at it's **entity declaration** which  essentially outlines it's inputs and outputs. 
+We need to know what are the input and output signals for `video_timing`. We can do this by navigating to `video_timing.vhd` and looking at it's **entity declaration** which essentially outlines it's inputs and outputs. 
 
 The **entity declaration** in `video_timing` looks like this: 
 
@@ -64,7 +64,7 @@ video_timing: entity work.video_timing
 	);
 ````
 
-### Key notes
+### Helpful notes
 We use the PLL output `clk_pixel` as the clock input. The reset input is driven by `(not pll_locked) or reset`, ensuring the component resets when the PLL is not locked or when the reset button is pressed.
 
 The same clock and reset is used for the other local components in the project, such as `i2c_config` and `renderer`.
@@ -75,7 +75,6 @@ The same clock and reset is used for the other local components in the project, 
 
 Use the same steps that we went through for `video_timing` to instantiate `i2c_config`. 
 
-### Key notes:
 You should also know that we do **not** need to add new signals for the output of this component, instead we will connect the outputs of `i2c_config` to the existing signals: `i2c_scl` and `i2c_sda`.  
 
 ````VHDL
@@ -87,7 +86,7 @@ Here is the block diagram for `i2c_config` to help you:
 
 ![I2C block diagram](../assets/i2c_block_diagram.png)
 
-### Reminder: Clock and Reset Wiring
+#### Reminder: Clock and Reset Wiring
 - **All the local components** in this project use `clk_pixel` (the output of the PLL) as their `clk` input. 
 - **All local components** in this project use `(not pll_locked) or reset` as their `reset` input. 
 
@@ -97,15 +96,15 @@ Use the same steps that we went through for `video_timing` to instantiate `rende
 
 We will set `clk` and `reset` for `renderer` the same way we did it for `video_timing` and `i2c_config`. 
 
-### Key notes:
-
-Ignore all game logic signals for now. We will be ignoring all the game logic signals (`pl_y` , `pr_y`, `ball_x`, `ball_y`, `score_l`, and `score_r` ) for `renderer` because right now we're just trying to get the display working on HDMI. 
-
 Here is the block diagram for `renderer` to help you:
 
 ![Renderer block diagram](../assets/renderer_block_diagram.png)
 
 Notice how the signals for the inputs of `renderer` are the same signals used in the outputs for `video_timing`. 
+
+#### Ignore all game logic signals for now
+
+We will be ignoring all the game logic signals (`pl_y` , `pr_y`, `ball_x`, `ball_y`, `score_l`, and `score_r` ) for `renderer` because right now we're just trying to get the display working on HDMI. 
 
 ### 3. Compile and Verify
 Now, compile the project and resolve any errors. The board will not display anything over HDMI yet. 
@@ -113,3 +112,6 @@ Now, compile the project and resolve any errors. The board will not display anyt
 However, you can use the RTL Viewer and compare your design to the screenshot below to verify your implementation.
 
 ![Renderer block diagram](../assets/RTL_white_screen.png)
+
+---
+Next: [Connecting the FPGA to an HDMI Monitor](06_display_over_hdmi.md)

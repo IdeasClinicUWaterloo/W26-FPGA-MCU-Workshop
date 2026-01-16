@@ -9,6 +9,7 @@ We use to I2C communication in this workshop for the ADV7513 HDMI encoder which 
 ##  How to Connect Video Signals in `hdmi_top.vhd`
 Assign the output signals `hdmi_tx_de`, `hdmi_tx_hs`, `hdmi_tx_vs`, and `hdmi_tx_clk` to `de`, `hsync`, `vsync`, and `clk_pixel`, respectively in the **logic section** of the architecture body in `hdmi_top.vhd`.
 
+You can copy and paste this into the corresponding section: 
 ````VHDL
 -- wiring HDMI tx to generated video signals
 hdmi_tx_de <= de;
@@ -26,9 +27,9 @@ Compile and upload your program to the board. This may take a moment. If it is w
 
 With the HDMI system working, we will now write some logic to display a pattern over HDMI. We will use the provided `renderer` component to interface with the video timing signals and choose a color for each pixel on the display.
 
-### 1. Locate the Main `process` in `renderer.vhd`
+### 1. Identify Where to Add Code in`renderer.vhd`
 
-Open `renderer.vhd` and go to down to its **process**: 
+Open `renderer.vhd` and go to down to its **process**. If you have forgotten how processes work in VHDL, you can refer to [the Introductory FPGA Workshop](../../Introductory%20Workshop/Activities/activity_2.md#process). 
 
 ![Renderer process for white screen](../assets/white_screen_process.png)
 
@@ -45,14 +46,16 @@ You can do this by replacing this:
 
 ![RBG white](../assets/rbg_white.png)
 
-with your test pattern. **Warning**: this step may produce flashing patterns that can trigger seizures for people with photosensitive epilepsy.
+with your test pattern. 
 
 Some options for ways to generate the pattern include: 
 - Assigning red, green, and blue values based on bits in `hcount` and `vcount` 
 - Color every other pixel white, alternating colors every frame 
-- Draw a checkerboard with different size squares in red, green, and blue 
+- Draw a checkerboard with different size squares in red, green, and blue
 
-### Key notes
+**Warning**: this step may produce flashing patterns that can trigger seizures for people with photosensitive epilepsy.
+
+### Helpful notes
 
 In VHDL, INTEGER types cannot be indexed, so `renderer` includes two signals (`hcount_vec` and `vcount_vec`) that are STD_LOGIC_VECTOR versions of `hcount` and `vcount`.  Use these if you need to access certain bits of `hcount` and `vcount` in your test pattern logic. 
 
@@ -73,3 +76,6 @@ This screenshot is displaying the provided example test pattern but you can also
 
 ---
 Now that we've connect our FPGA board to our display, we can now start drawing objects!
+
+---
+Next: [Drawing Rectangles on the Screen](07_draw_rectangles.md)

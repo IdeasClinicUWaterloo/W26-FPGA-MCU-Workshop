@@ -22,7 +22,6 @@ As you map the ports, here are some things to keep in mind:
 - `reset`: `(not pll_locked) or reset` (we don’t want to run game logic until the PLL is back after a reset) 
 - `pl_up`, `pl_dn`, `pr_up`, `pr_dn` should map to `not key(3)`, `not key(2)`, `not key(1)`, `not key(0)`, respectively 
 
-#### Key notes
 Here is a block diagram for `game_logic` you may find useful: 
 
 ![Game logic block diagram](../assets/game_logic_block_diagram.png)
@@ -68,3 +67,6 @@ You need to use `on_pl`, `on_pr`, and `on_ball`. You should follow the same appr
 ### 6. Compile and Verify 
 
 Compile and upload your code. This may take a while. If you followed the steps successfully then you should be displaying the shapes for our pong game.
+
+---
+Next: [Implement Paddle Movement](10_paddle_movement.md)

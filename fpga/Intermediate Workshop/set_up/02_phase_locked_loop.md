@@ -13,14 +13,14 @@ Intel Quartus Prime Light comes packaged with a small library of IP cores with v
 
 Several logic components we use in this workshop require a 74.25MHz clock. However, the development board we are using only includes a 50MHz internal clock. To generate a 74.25MHz signal from the provided 50MHz signal, we will use a device called a phase-locked loop (PLL). 
 
-At its core, a PLL generates a clock that is in-phase with another clock. Using clock dividers to pre-scale the input and feedback, a PLL may generate new clock frequencies at their output that do not drift over time with respect to their input clocks. To learn more about PLLs, see Appendix C. 
+At its core, a PLL generates a clock that is in-phase with another clock. Using clock dividers to pre-scale the input and feedback, a PLL may generate new clock frequencies at their output that do not drift over time with respect to their input clocks. To learn more about PLLs, see [Appendix C](../appendices/appendix_c.md). 
 
 Instead of writing this component from scratch, we can use a pre-built, pre-tested component from the Altera IP library. To do so, we use the IP library in Quartus. 
 
 ## How to add Phase-Locked Loop from IP library
 1. Open the IP Catalogue using the Open IP Catalogue button (see below) or by pressing **Alt+7.** 
 
-    Note: it may already be open in your project on the right.
+    **Note:** it may already be open in your project on the right.
 
     ![IP library directory](../assets/ip_directory.png)
 
@@ -40,9 +40,13 @@ Instead of writing this component from scratch, we can use a pre-built, pre-test
 
     ![IP library clock selection](../assets/ip_clk_selection.png)
 
-6. Click finish. Await the “Generation Successful” message in the Generation window that appears. 
+6. Click finish. Await the **“Generation Successful”** message in the Generation window that appears. 
 
     ![IP library success message](../assets/ip_successful_generation.png)
+
+    **Troubleshooting:**
+    
+    Sometimes Quartus reports a generation error or failure even if the generation was successful. As long as the popup in the next step appears, you are good to continue. 
 
 7. If you receive a popup asking to add the generated IP variation file to the project, check the box and press **Yes**.
 
@@ -54,9 +58,12 @@ Instead of writing this component from scratch, we can use a pre-built, pre-test
 
     ![IP component location](../assets/ip_component_location.png)
 
-9. If you have completed these steps sucessfully. You sure see this in your project's file directory 
+9. If you have completed these steps sucessfully. You should see this in your project's file directory:
 
     ![PLL file directory](../assets/pll_file_directory.png)
 
 ---
 You will instantiate and connect this PLL in a later step.
+
+---
+Next: [Overview: Setting Up Video over HDMI](../video_hdmi/03_video_hdmi_overview.md)

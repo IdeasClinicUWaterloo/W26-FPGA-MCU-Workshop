@@ -17,4 +17,10 @@ In the provided skeleton for this project, several subsystems are already implem
 
 These subsystems are all connected together by a top-level file: `hdmi_top.vhd`, which acts as a wrapper for all these modules.
 
+Although these modules are pre-written, feel free to refer to the [appendices](../appendices/) for a deeper understanding of how the code works.
+
+---
 The first step in building the Pong game is to set up HDMI output. This requires instantiating the PLL IP core (`pll_74mhz`) and `video_timing`, `i2c_config`, and `renderer` in the top-level file: `hdmi_top.vhd`.
+
+---
+Next: [Add Phase-Locked Loop to Top-Level File](04_instatiate_pll.md)
