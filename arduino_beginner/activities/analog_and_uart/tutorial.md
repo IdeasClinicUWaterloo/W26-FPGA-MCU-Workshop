@@ -24,7 +24,7 @@ This means each analog input is represented by one of 2¹⁰ or 1024 distinct va
 > The breaking up of a continuous range, like the possible voltages read by an ADC, into a discrete set of steps is called **quantization**.
 > If the ADC breaks the range into even intervals and takes the lowest value of each interval for values between the intervals, then the equation would be
 >
-> $$ \frac{5\pu{V} - 0\pu{V}}{2^{10} - 1} * 120 = 200/341\pu{V} $$
+> $$ \frac{5\pu{V} - 0\pu{V}}{2^{10} - 1} * 120 = 0.5865\pu{V} $$
 >
 > In fact, the UNO R4 provides a [maximum resolution of 14 bits](https://docs.arduino.cc/tutorials/uno-r4-minima/adc-resolution/) for accurate analog readings.
 
