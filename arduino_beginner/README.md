@@ -32,7 +32,7 @@ scopes.
 - Assorted Wires
 
 ### Note on computer compatibility
-The Arduino IDE does not support Windows operating systems running on a computer with the `ARM64` processor architecture. To check what your processor is, one way is to type the following into Command Prompt:
+The Arduino IDE does not support Windows operating systems running on a computer with the `ARM64` processor architecture. To check what your processor is on Windows, one way is to type the following into Command Prompt:
 
 ``` shell
 echo %PROCESSOR_ARCHITECTURE%
