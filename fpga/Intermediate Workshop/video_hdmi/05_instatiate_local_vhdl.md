@@ -38,6 +38,7 @@ In the **declaration section** , we need to add the inputs and outputs we identi
 
 We do **not** need to declare new signals for the `clk` and `reset` inputs. These will be connected later when instantiating the module. The clock and reset wiring will be explained in that step.
 
+You can copy and paste this into the corresponding section:
 ````VHDL
 -- video timing signals
 signal hcount : INTEGER; -- current horizontal pixel position
@@ -47,7 +48,7 @@ signal hsync, vsync, de, frame_start : STD_LOGIC;
 
 ### 3. Write instantiation
 
-In the **logic section**, add this instantiation: 
+In the **logic section**, copy and paste this instantiation: 
 
 ````VHDL
 -- video timing instatatioin  
@@ -77,6 +78,7 @@ Use the same steps that we went through for `video_timing` to instantiate `i2c_c
 
 You should also know that we do **not** need to add new signals for the output of this component, instead we will connect the outputs of `i2c_config` to the existing signals: `i2c_scl` and `i2c_sda`.  
 
+This can be copied and pasted into the corresponding section: 
 ````VHDL
 scl => i2c_scl, 
 sda => i2c_sda

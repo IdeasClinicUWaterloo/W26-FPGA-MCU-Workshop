@@ -31,7 +31,7 @@ Here is a block diagram for `game_logic` you may find useful:
 
 Still in `hdmi_top.vhd`, we need to add all the game logic signals that we left out in previous steps to the `renderer` component in `hdmi_top.vhd`. 
 
-Your `renderer` instatiation statement should look like this now: 
+Your `renderer` instatiation statement should look like this now:  
 
 ````vhdl
 -- renderer instatatioin

@@ -23,7 +23,7 @@ In Quartus, create a new VHDL file in the current project called `rect_display.v
 
 ### 2. Write VHDL for `rect_display` 
 
-Please include the following: 
+Please copy and paste the following: 
 
 ### Library and packages
 
@@ -93,12 +93,15 @@ Notice that in `renderer.vhd`, we've already provided the component definition f
 
 You must now create a signal to store the `lit` output from `rect_display`
 
+This can be copied and pasted into the corresponding section: 
 ````vhdl
 signal on_rect : STD_LOGIC;
 ````
 
 ### 2.3 Instantiate `rect_display` component
 You need to now write the instantiation for a copy of your rectangle component (like you did for the PLL). 
+
+This can be copied and pasted into the corresponding section: 
 
 ````vhdl
 test_rect : rect_display
@@ -134,4 +137,4 @@ The above example has a rectangle with the following bounds:
 If you can successfully display a rectangle, continue to the next part to implement our Pong game!
 
 ---
-Next [Overview: Pong Game Play](../gameplay/08_gameplay_overview.md)
+Next: [Overview: Pong Game Play](../gameplay/08_gameplay_overview.md)

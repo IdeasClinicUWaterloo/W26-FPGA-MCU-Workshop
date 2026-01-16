@@ -31,6 +31,7 @@ In `hdmi_top.vhd`, the architecture body consists of:
 
 In the **declaration section** of the architecture body, add the following component definition. This informs Quartus that, somewhere in our project, there’s a component named `pll_74mhz` with two input ports and two output ports of the STD_LOGIC type. 
 
+This can be copied and pasted into the coresponding section: 
 ````VHDL
 -- pll_74mhz component definition
 component pll_74mhz is
@@ -44,8 +45,9 @@ end component;
 ````
 ### 2. Declare Internal PLL Signals
 
-Still in the **declaration section**, add the following internal signals to connect to the PLL:
+Still in the **declaration section**, add internal signals to connect to the PLL. 
 
+This can be copied and pasted into the corresponding section: 
 ````VHDL
 -- pll_74mhz signals
 signal reset : STD_LOGIC;      -- resets input to the PLL
@@ -59,6 +61,7 @@ If you have forgotten signals in VHDL, you can refer to the [Introductory FPGA W
 
 Since `reset` is an input to our PLL clock, we must drive it ourselves. In the **logic section**, drive the reset to the opposite value of `cpu_reset_n`, since the default behavior of the reset button is active-low.
 
+This can be copied and pasted into the corresponding section: 
 ````VHDL
 -- drive reset active-high 
 reset <= not cpu_reset_n;
@@ -66,7 +69,7 @@ reset <= not cpu_reset_n;
 
 ### 4. Instantiate the PLL
 
-In the **logic section** (i.e., after the begin keyword), add this instatiation: 
+In the **logic section** (i.e., after the begin keyword), copy and paste this instatiation: 
 
 ````VHDL
 -- pll_74mhz instantiation

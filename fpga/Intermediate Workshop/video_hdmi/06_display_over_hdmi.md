@@ -29,7 +29,7 @@ With the HDMI system working, we will now write some logic to display a pattern 
 
 ### 1. Identify Where to Add Code in`renderer.vhd`
 
-Open `renderer.vhd` and go to down to its **process**. If you have forgotten how processes work in VHDL, you can refer to [the Introductory FPGA Workshop](../../Introductory%20Workshop/Activities/activity_2.md#process). 
+Open `renderer.vhd` and go to down to its **process**. If you have forgotten how processes work in VHDL, you can refer [here](../../Introductory%20Workshop/Activities/activity_2.md#process). 
 
 ![Renderer process for white screen](../assets/white_screen_process.png)
 
@@ -59,7 +59,7 @@ Some options for ways to generate the pattern include:
 
 In VHDL, INTEGER types cannot be indexed, so `renderer` includes two signals (`hcount_vec` and `vcount_vec`) that are STD_LOGIC_VECTOR versions of `hcount` and `vcount`.  Use these if you need to access certain bits of `hcount` and `vcount` in your test pattern logic. 
 
-One example of a simple test pattern would be: 
+One example of a simple test pattern that you can copy and paste would be: 
 ````VHDL
 -- logic for test pattern/choosing a color goes here
 rgb(7 downto 0)   <= hcount_vec(7 downto 0); 
