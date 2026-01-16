@@ -4,7 +4,7 @@ I2C (Inter-Integrated Circuit, I2C) is a serial communication protocol. Its main
 
 I2C communication is performed over two wires, SDA (the serial data line), and SCL (the serial clock line). Both lines are driven by [open collector drivers](https://en.wikipedia.org/wiki/Open_collector) to destructive bus conflicts. A typical wiring diagram for I2C is illustrated in Figure 4.
 
-![Typical I2C Wiring](assets/i2c_wiring.png)
+![Typical I2C Wiring](../assets/i2c_wiring.png)
 
 *Figure 4 - Typical I2C Wiring*
 
@@ -12,7 +12,7 @@ I2C communication is performed over two wires, SDA (the serial data line), and S
 
 In I2C, the controller devices are responsible for driving the SCL line. To claim the bus and mark the beginning of a transmission, a controller will drive SDA low, then drive SCL low. To mark the end of a transmission, a controller will release SCL back to high, then release SDA back to high. This is how data is synchronized at the packet level. These start- and end-of-transmission signals are illustrated in Figure 5.
 
-![I2C Packet-Level Synchronization](assets/i2c_packet_sync.png)
+![I2C Packet-Level Synchronization](../assets/i2c_packet_sync.png)
 
 *Figure 5 - I2C Packet-Level Synchronization*
 
@@ -20,7 +20,7 @@ In I2C, the controller devices are responsible for driving the SCL line. To clai
 
 To transmit values, SDA is released to VDD (a logical '1') or driven to ground (a logical '0'). These changes are clocked by SCL, so they are driven to the line while SCL is low and read when SCL is high. This is how data is synchronized at the bit level. See an illustration of this process in Figure 6. Note that the I2C start and stop signals both involve changing the value of SDA while SCL is high. This allows devices to differentiate the start and stop signals from logical ones and zeros, since nowhere else in a transmission does SDA change while SCL is high.
 
-![I2C Bit-Level Synchronization](assets/i2c_bit_sync.png)
+![I2C Bit-Level Synchronization](../assets/i2c_bit_sync.png)
 
 *Figure 6 - I2C Bit-Level Synchronization*
 
@@ -30,7 +30,7 @@ A complete I2C transmission consists of a start signal, an address frame, one or
 
 I2C frames are each made up of 9 bits, 8 for data/addresses and one for acknowledgement from the target device. The sender of the frame (the controller for address frames and writes, the target for reads) will transmit the 8 data bits in sequence. Then, the receiver drives SDA low at the clock cycle to acknowledge it received the frame. An entire I2C transmission is illustrated in Figure 7.
 
-![I2C Transmission](assets/i2c_transmission.png)
+![I2C Transmission](../assets/i2c_transmission.png)
 
 *Figure 7 - I2C Transmission*
 
@@ -44,7 +44,7 @@ To properly power on and configure the ADV7513 encoder, we need to send three se
 
 The I2C protocol is implemented by a simple state machine. Using a clock divider, the 74.25MHz clock is scaled to a 200kHz clock. Then, the state machine iterates with each pulse of the 200kHz clock. The general idea of the state machine is to iterate over the three commands to send over I2C. For each of those commands, it iterates over the frames to send, and the bits within those frames. A diagram of the state machine is illustrated in Figure 8.
 
-![I2C State Machine](assets/i2c_state_machine.png)
+![I2C State Machine](../assets/i2c_state_machine.png)
 
 *Figure 8 - I2C State Machine*
 

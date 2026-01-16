@@ -6,13 +6,13 @@ In this workshop, we used horizonal sync (h-sync), vertical sync (v-sync), and d
 
 H-sync and v-sync are part of a lineage of compatibility originating from CRT displays. In CRT displays, images are displayed by shooting a thin beam of electrons, known as the scanline, at phosphorescent materials on the face of the display. The scanline moves across the face of the display many times per second, from left to right, top to bottom, leaving a trail of dimly glowing material whose brightness corresponds to the intensity of the electron beam. By varying the intensity of the electron beam as we move it, we can draw an image onto the screen. We perceive the quickly moving beam as a cohesive image because of a phenomenon known as [persistence of vision](https://en.wikipedia.org/wiki/Persistence_of_vision).
 
-![Image of scanline moving across a CRT](assets/crt_scanline.png)
+![Image of scanline moving across a CRT](../assets/crt_scanline.png)
 
 *Figure 9 - Image of scanline moving across a CRT with 12μs exposure, courtesy of [The Slow Mo Guys](https://www.youtube.com/watch?v=V6XnSvB34y8)*
 
 To draw an image to the display, we need to provide a signal corresponding to the desired brightness of the image at the current position. To synchronize the position of the scanline on the display with the brightness data being sent, we send two additional signals to the display: an h-sync and a v-sync signal. The h-sync signal tells the display to move the scanline back to the left and down a line. The v-sync signal tells the display to move the scanline back to the top-left of the screen. The motion of the scanline with respect to the h-sync and v-sync signals is shown in Figure 10.
 
-![Scanline Path](assets/scanline_path.png)
+![Scanline Path](../assets/scanline_path.png)
 
 *Figure 10 - Scanline Path*
 
@@ -46,19 +46,19 @@ x"10", x"10", x"06"
 
 The above code sets up the sequence of I2C writes to send to the ADV7513 encoder. In the first message, we write 0x10 (0b00010000) to address 0x41. This powers on the chip. A register description for this address is shown in Figure 11.
 
-![Register Description of 0x41 for ADV7513](assets/adv7513_reg_0x41.png)
+![Register Description of 0x41 for ADV7513](../assets/adv7513_reg_0x41.png)
 
 *Figure 11 - Register Description of 0x41 for ADV7513*
 
 The second message writes 0x10 (0b00010000) to address 0x15. This sets the video mode to 24-bit RGB with separate synchronization and disables the I2S audio. A register description for this address is shown in Figure 12. Unfortunately, the development board we use in this workshop does not include the physical connections to the ADV7513 to use HDMI audio. It does however have a separate audio system that uses the three 3.5mm jacks on the side of the board.
 
-![Register description of 0x15 of ADV7513](assets/adv7513_reg_0x15.png)
+![Register description of 0x15 of ADV7513](../assets/adv7513_reg_0x15.png)
 
 *Figure 12 - Register description of 0x15 of ADV7513*
 
 The final message writes 0x06 (0b00000110) to address 0xAF. This disables HDCP, and configures the chip to use HDMI mode (rather than DVI mode, which pares down functionality for the sake of compatibility). A register description for this address is shown in Figure 13.
 
-![Register description of 0xAF of ADV7513](assets/adv7513_reg_0xAF.png)
+![Register description of 0xAF of ADV7513](../assets/adv7513_reg_0xAF.png)
 
 *Figure 13 - Register description of 0xAF of ADV7513*
 

@@ -4,7 +4,7 @@ A finite state machine (FSM) is a machine that can only ever be in one of a fini
 
 One example of a simple FSM is a traffic light. If the light has been green for long enough, it will transition to amber to indicate a stop will start soon. However, the green light must never transition from green immediately to red, since this would be a safety issue. Thus, the FSM for the traffic light does not include a transition from green directly to red. An illustration of a simple traffic light FSM is shown in Figure 17.
 
-![State machine for traffic light](assets/traffic_light_fsm.png)
+![State machine for traffic light](../assets/traffic_light_fsm.png)
 
 *Figure 17 - State machine for traffic light*
 
@@ -26,7 +26,7 @@ To implement an FSM capable of detecting pairs, we'll first consider what possib
 
 Drawing this state machine, we get the following:
 
-![State diagram for pair detector](assets/pair_detector_fsm.png)
+![State diagram for pair detector](../assets/pair_detector_fsm.png)
 
 *Figure 18 - State diagram for pair detector*
 
@@ -67,7 +67,7 @@ However, because all our transitions use a general rule of thumb, we embed them 
 
 Similar to the RTL logic viewer in Quartus, there is also a tool to see state machines in your project. To open this tool, select Tools >> Netlist Viewers >> State Machine Viewer.
 
-![State Machine Viewer](assets/state_machine_viewer.png)
+![State Machine Viewer](../assets/state_machine_viewer.png)
 
 ## Mealy and Moore State Machines
 
@@ -77,7 +77,7 @@ Two different approaches can be taken to generate outputs from a state machine. 
 
 In a Mealy state machine, the output is a function of the present inputs and the present state as shown in Figure 19.
 
-![Mealy Machine overview](assets/mealy_machine.png)
+![Mealy Machine overview](../assets/mealy_machine.png)
 
 *Figure 19 - Mealy Machine overview*
 
@@ -85,7 +85,7 @@ In a Mealy state machine, the output is a function of the present inputs and the
 
 In a Moore state machine, the outputs only depend on the current state, as show in Figure 20. Note, this does not mean the inputs have no impact on the outputs, just that the inputs can only modify the outputs by changing the state.
 
-![Moore Machine Overview](assets/moore_machine.png)
+![Moore Machine Overview](../assets/moore_machine.png)
 
 *Figure 20 - Moore Machine Overview*
 

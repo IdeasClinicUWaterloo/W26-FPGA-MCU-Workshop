@@ -13,7 +13,7 @@ The simplest form of a PLL is one that generates a clock of the same frequency a
 
 The phase detector compares the output and input clock, determining whether the output clock is running slow or fast. The output of the phase detector is fed into a charge pump which tracks the frequency difference between the two clocks (think an integrator). The output of the charge pump is fed through a low-pass filter (to prevent random jitter from causing rapid overcorrections). Then, the filtered output is fed to a voltage-controlled oscillator, which generates the output clock. This circuit is illustrated in Figure 14.
 
-![Simple PLL](assets/simple_pll.png)
+![Simple PLL](../assets/simple_pll.png)
 
 *Figure 14 - Simple PLL*
 
@@ -23,13 +23,13 @@ As the output clock drifts relative to the input clock, the phase detector sees 
 
 To generate clocks with frequencies other than the input frequency, we can use clock dividers to adjust the input and feedback frequencies. Consider the same circuit as above but with a clock divider before the phase detector, as shown in Figure 15.
 
-![PLL with input divider](assets/pll_input_divider.png)
+![PLL with input divider](../assets/pll_input_divider.png)
 
 *Figure 15 - PLL with input divider*
 
 In this configuration, F_VCO = F_REF = F_IN/N. From this, we can get new clock frequencies that are integer divisors of F_IN. This is still too limiting – what if we want an output frequency that is two thirds the input frequency, or that is double the input frequency? To make our PLL more flexible, we incorporate a second frequency divider in the feedback path of our PLL. This circuit is shown in Figure 16.
 
-![PLL with input and feedback dividers](assets/pll_feedback_divider.png)
+![PLL with input and feedback dividers](../assets/pll_feedback_divider.png)
 
 *Figure 16 - PLL with input and feedback dividers*
 
