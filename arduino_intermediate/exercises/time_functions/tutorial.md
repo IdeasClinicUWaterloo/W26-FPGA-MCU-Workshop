@@ -6,7 +6,7 @@ The Arduino IDE thankfully abstracts all of this behind various built-in librari
 
 Arduino IDE also includes many other time functions. delay() uses the hardware timers to precisely pause the CPU and micros() will return the microseconds since the MCU was activated. analogWrite() and PWM signal generation also uses the hardware timers but have abstracted them away behind functions and libraries.
 
-````arduino
+````cpp
 gameTime = millis();
 ````
 

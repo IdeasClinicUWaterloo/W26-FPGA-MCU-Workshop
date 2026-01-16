@@ -34,5 +34,16 @@ scopes.
 ### Note on computer architecture: 
 If you happen to be using an ARM based Windows machine, you will most likely be unable to proceed on your device. Please either partner up with someone who uses a different microarchitecture, or request an IdeasClinic laptop from the instructional team.
 
+# Table of Contents
+
+This workshop is broken up into four activities.
+Each activity will introduce you to one key concept.
+After you complete each activity, you will have the knowhow to create your own Pong game.
+
+1. [Background Information](00_background.md)
+2. [Activity 1: Digital Inputs and Outputs](activities/digital_io/tutorial.md)
+3. [Activity 2: Analog Inputs and UART](activities/analog_and_uart/tutorial.md)
+4. [Activity 3: Pulse Width Modulation](activities/pulse_width_modulation/tutorial.md)
+
 ---
 Next: [Activity one, digital inputs and outputs](00_digital.md)

@@ -11,7 +11,7 @@ This code can be pasted into the starter.ino file to demonstrate how button inte
 
 
 ### Includes
-````arduino
+````cpp
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
@@ -19,7 +19,7 @@ This code can be pasted into the starter.ino file to demonstrate how button inte
 
 
 ### Definitions 
-````arduino
+````cpp
 // This code will wait for a button press to turn the built in LED off for a short duration
 int BTN_PAUSE = 2;
 void buttonInterrupt(){
@@ -29,7 +29,7 @@ void buttonInterrupt(){
 ````
 
 ### Setup Code
-````arduino
+````cpp
 pinMode(LED_BUILTIN, OUTPUT);
 pinMode(BTN_PAUSE, INPUT_PULLUP);
 
@@ -44,7 +44,7 @@ FALLING will trigger when the pin changes from 1 to 0 – RISING will trigger wh
 ````
 
 ### Loop Code
-````arduino 
+````cpp 
 digitalWrite(LED_BUILTIN, HIGH);
 delay(1000);
 ````

@@ -18,7 +18,7 @@ The code below is what the logic for flipping the paddle direction might look li
 
 Take a look at the skeleton code and paste the sections of this block you need into the skeleton.
 
-````arduino
+````cpp
 /* If the button states for either player change from Low to HIGH, 
 the paddle direction is flipped p1 and p2Dir need to be declared as const int before your setup. 
 Assign them a value to determine their speed. */ 
@@ -49,7 +49,7 @@ How do we stop the paddles from extending past the screen borders? We need to co
 
 This can be copied into the corresponding section of the skeleton code to add paddle constraint functionality.
 
-````arduino
+````cpp
 if (P1_Y <= 0 || P1_Y >= SCREEN_HEIGHT - PADDLE_HEIGHT) {
     // constrain prevents the paddle from extending beond the screen
 
@@ -70,7 +70,7 @@ Collision is determined by comparing the position of the ball with the position 
 This code can be pasted into corresponding sections of the skeleton code to add collusion and movement functionality.
 
 
-````arduino
+````cpp
 ballX += ballVX;
 ballY += ballVY;
 // This is the movement for the ball. Similar to the paddles, every loop of the code will update the position
@@ -107,7 +107,7 @@ Currently, there is no logic for the ball colliding with the top and bottom wall
 
 This code can be added to the corresponding section of the skeleton to add collision functionality with the tpo and bottom of the screen.	
 
-````arduino
+````cpp
 if (ballY <= 0 || ballY >= SCREEN_HEIGHT - 2) {
     // This is the bounds of top and bottom the screen. What happens when the ball hits the bounds?
 
@@ -120,7 +120,7 @@ Scoring is achieved by checking if the ball has contacted either side of the bor
 
 This code can be added to the corresponding section of the skeleton to add scoring functionality
 
-````arduino
+````cpp
 if (ballX < 0) {
     scoreP2++;
 	resetRound();

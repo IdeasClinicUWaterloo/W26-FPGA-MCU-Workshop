@@ -1,1 +1,56 @@
 *~
+*.docx
+*.pptx
+*.xlsx
+*#
+
+# Quartus files
+# Credit: https://gist.github.com/nhasbun/71918796044b7ba89d6662133495f754
+# A gitignore for Altera Quartus II that tries to ignore almost all of the
+# automatically Quartus-generated files. This primarily leaves the project,
+# settings, source, and constraint files to be added. The files ignored do not
+# include the bulk of the MegaFunction Wizard generated files which enables
+# a cloned repository to be used (usually) immediately without regenerating
+# Altera IP blocks.
+# Adapted to allow images and text files
+
+# Need to keep all HDL files and timing constraint files
+# *.vhd
+# *.v
+# *.sdc
+
+# ignore Quartus II generated folders
+**/_sim
+**/db
+**/greybox_tmp
+**/incremental_db
+**/simulation
+**/testbench
+**/timing
+
+# ignore Quartus II generated files
+*_generation_script*
+*_inst.vhd
+*.bak
+*.cmp
+*.done
+*.eqn
+*.hex
+*.html
+*.jdi
+*.mif
+*.pin
+*.pof
+*.ptf.*
+*.qar
+*.qarlog
+*.qws
+*.rpt
+*.smsg
+*.sof
+*.sopc_builder
+*.summary
+*.tcl
+*sopc_*
+PLLJ_PLLSPE_INFO.txt # The generated PLL specification file
+W26-FPGA-MCU-Workshop/blob/main/Introductory Workshop/README.md
