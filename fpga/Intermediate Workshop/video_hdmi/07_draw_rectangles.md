@@ -66,8 +66,9 @@ As you write this logic, think about whether the x and y-coordinates of the curr
 architecture procedural of rect_display is
 	begin
     process(hcount, vcount) is
+    begin
       -- Fill in your logic here
-      -- Use a conditional statement to set lit to '1' when hcount and vcount are within the bounds
+      -- Use an if statement to set lit to '1' when hcount and vcount are within the bounds
     end process; 
 
 end procedural;
