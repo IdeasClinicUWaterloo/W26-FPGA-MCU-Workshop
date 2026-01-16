@@ -83,5 +83,5 @@ This screenshot is displaying the provided example test pattern but you can also
 Now that we've connect our FPGA board to our display, we can now start drawing objects!
 
 ---
-|Back: [Add Local VHDL files to Top-Level File](video_hdmi/05_instatiate_local_vhdl.md) | [Top](../README.md) |Next: [Drawing Rectangles on the Screen](07_draw_rectangles.md)|
+|Back: [Add Local VHDL files to Top-Level File](05_instatiate_local_vhdl.md) | [Top](../README.md) |Next: [Drawing Rectangles on the Screen](07_draw_rectangles.md)|
 |---|---|---|

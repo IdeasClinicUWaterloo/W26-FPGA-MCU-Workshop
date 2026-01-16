@@ -67,9 +67,6 @@ You need to use `on_pl`, `on_pr`, and `on_ball`. You should follow the same appr
 ### 6. Compile and Verify 
 
 Compile and upload your code. This may take a while. If you followed the steps successfully then you should be displaying the shapes for our pong game.
-
 ---
-Next: [Implement Paddle Movement](10_paddle_movement.md)
-
 |Back: [Overview: Pong Game Play](08_gameplay_overview.md)| [Top](../README.md) |Next: [Implement Paddle Movement](10_paddle_movement.md)|
 |---|---|---|
