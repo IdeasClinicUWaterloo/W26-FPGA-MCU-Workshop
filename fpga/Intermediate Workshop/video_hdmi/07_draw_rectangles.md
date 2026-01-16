@@ -73,25 +73,6 @@ architecture procedural of rect_display is
 
 end procedural;
 ````
-#### Helpful notes: Conditional Assignment
-
-It may be useful to know the syntax of conditional assignment, which allows conditional behavior without using a process:
-
-```vhdl
-case var is
-	when condition_1 =>
-      val_1 <= '1';
-	when condition_1 =>
-      val_1 <= '0';
-	when others =>
-      -- default behavior
-      val_1 <= val_default
-end case;
-```
-
-This syntax will assign `1` to `val_1` when `condition_1` is met, `0` when `condition_2` is met, and so on. It will assign `val_default` if none of the conditions are met. 
-
-If more than one condition is met, then the topmost value will be prioritized. When this logic is synthesized (converted from HDL into logic elements for the FPGA), it will become a multiplexer element. 
 
 ### 2. Use `rect_display` component in `renderer.vhd`
 
