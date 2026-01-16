@@ -67,3 +67,6 @@ You will instantiate and connect this PLL in a later step.
 
 ---
 Next: [Overview: Setting Up Video over HDMI](../video_hdmi/03_video_hdmi_overview.md)
+
+|Back: [Project setup](01_project_setup.md) | [Top](../README.md) |Next: [Overview: Setting Up Video over HDMI](../video_hdmi/03_video_hdmi_overview.md)|
+|---|---|---|

@@ -11,4 +11,6 @@ The file also contains a process which serves as the main game loop, and updates
 You may notice that many of the output ports have variables within the process that are modified internally before being assigned out (e.g., `ball_x` is assigned to a variable named `bx_n`, which is the one used in the process). In VHDL, an out port cannot have its value read from within the component. To allow us to make decisions based on the present value, and keep the entity declaration clean, we create an internal variable and assign the outport to that. This is a common idiom in VHDL. 
 
 ---
-Next: [Drawing Game Objects](09_draw_objects.md)
+
+|Back: [Drawing Rectangles on the Screen](../video_hdmi/07_draw_rectangles.md) | [Top](../README.md) |Next: [Drawing Game Objects](09_draw_objects.md)|
+|---|---|---|

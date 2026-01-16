@@ -94,4 +94,5 @@ Open the RTL Viewer in Quartus and inspect the generated hardware connections:
 If you have forgotten how to use the RTL viewer in Quartus, you can refer to the [Introductory FPGA Workshop](../../Introductory%20Workshop/Activities/activity_1.md#helpful-tip). 
 
 ---
-Next: [Add Local VHDL files to Top-Level File](05_instatiate_local_vhdl.md)
+|Back: [Overview: Setting Up Video over HDMI](03_video_hdmi_overview.md) | [Top](../README.md) |Next: [Add Local VHDL files to Top-Level File](05_instatiate_local_vhdl.md)|
+|---|---|---|

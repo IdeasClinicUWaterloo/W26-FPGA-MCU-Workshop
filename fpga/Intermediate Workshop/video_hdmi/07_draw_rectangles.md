@@ -137,4 +137,6 @@ The above example has a rectangle with the following bounds:
 If you can successfully display a rectangle, continue to the next part to implement our Pong game!
 
 ---
-Next: [Overview: Pong Game Play](../gameplay/08_gameplay_overview.md)
+
+|Back: [Connecting the FPGA to an HDMI Monitor](06_display_over_hdmi.md) | [Top](../README.md) |Next: [Overview: Pong Game Play](../gameplay/08_gameplay_overview.md)|
+|---|---|---|

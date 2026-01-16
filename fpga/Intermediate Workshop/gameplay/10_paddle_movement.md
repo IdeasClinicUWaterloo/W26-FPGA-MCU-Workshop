@@ -34,7 +34,7 @@ end if;
 
 -- clamp paddle positions to prevent them from extending beyond the screen
 ````
-#### Key Note
+#### Helpful note
 
 You can use the clamp function in the architecture to bound a number between two values, like so: 
 

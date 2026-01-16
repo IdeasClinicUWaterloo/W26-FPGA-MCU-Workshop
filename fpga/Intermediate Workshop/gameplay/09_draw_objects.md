@@ -70,3 +70,6 @@ Compile and upload your code. This may take a while. If you followed the steps s
 
 ---
 Next: [Implement Paddle Movement](10_paddle_movement.md)
+
+|Back: [Overview: Pong Game Play](08_gameplay_overview.md)| [Top](../README.md) |Next: [Implement Paddle Movement](10_paddle_movement.md)|
+|---|---|---|

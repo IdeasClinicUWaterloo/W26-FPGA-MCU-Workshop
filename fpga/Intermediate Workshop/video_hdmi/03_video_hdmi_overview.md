@@ -23,4 +23,5 @@ Although these modules are pre-written, feel free to refer to the [appendices](.
 The first step in building the Pong game is to set up HDMI output. This requires instantiating the PLL IP core (`pll_74mhz`) and `video_timing`, `i2c_config`, and `renderer` in the top-level file: `hdmi_top.vhd`.
 
 ---
-Next: [Add Phase-Locked Loop to Top-Level File](04_instatiate_pll.md)
+|Back: [Phase-Locked Loop IP core](../set_up/02_phase_locked_loop.md) | [Top](../README.md) |Next: [Add Phase-Locked Loop to Top-Level File](04_instatiate_pll.md)|
+|---|---|---|

@@ -26,4 +26,5 @@ More information about what each file does and how they work will be shared as w
 For those interested in learning more, feel free to examine the VHDL files and these [appendices](../appendices/). 
 
 ---
-Next: [Phase-Locked Loop IP core](02_phase_locked_loop.md)
+|Back: [Introduction](../README.md) | [Top](../README.md) |Next: [Phase-Locked Loop IP core](02_phase_locked_loop.md)|
+|---|---|---|
