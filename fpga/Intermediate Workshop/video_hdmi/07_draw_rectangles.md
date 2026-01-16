@@ -115,6 +115,10 @@ Here is the block diagram that you may find useful:
 
 ![Renderer block diagram for rect_test](../assets/rect_test_block_diagram.png)
 
+#### Helpful note
+
+You can directory assign numeric values to the `x1`, `x2`, `y1`, and `y2` signals to draw your rectangle. 
+
 ### 2.4 Use lit to draw the rectangle
 
 Replace the test pattern you wrote earlier with logic that uses the `lit` output (that is being stored in `on_rect`) to draw a rectangle on screen. 
