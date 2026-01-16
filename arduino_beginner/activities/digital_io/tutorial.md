@@ -2,29 +2,38 @@
 
 In this task you will control an LED with a button. When the button is pressed, the LED will turn on, and when the button is released, the LED will turn off. Figure 7 shows the circuit you’re going to build:
 
-![Figure 7, LED - Pushbutton Circuit](../../assets/led_pb_circuit.png)
+![Figure 1, LED - Pushbutton Circuit](../../assets/led_pb_circuit.png)
 
-*Figure 7, LED - Pushbutton Circuit*
-
+*Figure 1, LED - Pushbutton Circuit*
 
 Here’s how the circuit works:
 
-1.	The button is connected between the 5V power rail and a digital input pin (e.g., pin 2). When the button is pressed, the pin is connected directly to 5V, and the Arduino will read the pin as “High”. 
+1.	The button is connected between the 3V3 power rail and a digital input pin (e.g., pin 2). When the button is pressed, the pin is connected directly to 3.3 V, and the Arduino will read the pin as “High”. 
 2.	When the button is not pressed, the pin is tied to ground through the 10kΩ pull-down resistor between the input pin and GND. This ensures the input pin not floating when the button is not pressed.
 3.	The LED is connected in series with a current-limiting resistor to prevent it from burning out. The resistor connects to a digital output pin, which can be toggled HIGH or LOW to turn the LED on or off. Note that the LED must be oriented correctly, with the longer leg (anode) connected to the resistor (and then to the digital output), and the shorter leg (cathode) connected to GND. If you flip the LED, it will not light up.
 
 
 ## 1 Build your Circuit
 
-If you’ve never used a breadboard before, please refer to Figure 8 and follow these instructions:
+If you’ve never used a breadboard before, please refer to Figure 2 and follow these instructions. *We are here to help clarify any of these steps!*
 
-1.	Place the push button on the breadboard straddling the centre divider
-    - Connect one of its legs to the breadboard’s power rail with a red wire
-    - Connect its other leg to one leg of the 10 kΩ resistor (brown, black, orange). Put the resistor’s other leg in a different row
-    - Connect the resistor’s other leg to the breadboard’s ground rail with a black wire
-2.	Place the LED on the breadboard
-    - Connect the LED’s cathode (shorter leg) to the breadboard’s ground rail (black wire)
-    - Connect the LED’s anode (longer leg) to one end of the 220 Ω resistor (red, red, brown). Put the resistor’s other leg in a different row
+1. Place the push button on the breadboard straddling the centre divider.
+   The push button is a switch that, when pressed, will connect our 3.3 V power rail (written as 3V3) to a sensing input pin of the Arduino.
+   **To wire up the push button correctly:**
+   1. Connect one of the push button's legs to the breadboard's power rail with a red wire.
+      The power rail will be set by the Arduino to be at a certain voltage (3.3V) which is what the Arduino will read as an "input" of ON when the push button is activated.
+   2. Connect another of the push button's legs to a 10 kΩ resistor (brown, black, orange)
+      such that the resistor provides a "bridge" to the ground rail.
+      When you are finished, one side of the resistor should be attached to the ground (negative sign), and the other side should be attached to the push button.
+      
+      The ground rail will be set by the Arduino to be at a certain voltage (0V) relative to the Arduino which is what it will also read as an input of OFF when the push button is not activated. The resistor, named a pull-down resistor, is there to limit the amount of current which flows to ground while the push button is activated (this is a consequence of how this circuit was designed). Any current which flows past the resistor is strictly a loss (energy wasted) while the push button is activated, but as the button will not be activated often and the current is very small (3.3[V] / 10kOhm = 0.33mA) and the power is 0.001089 W; however, this is why pull-down resistors generally have large values.
+
+2.	Place the LED on the breadboard.
+    The LED is a separate experiment: we wish to light it up using the Arduino board.
+    LEDs are diodes (circuit components which only permit current flow in one direction to a breaking point), so we must connect the cathode and anode of the LED correctly.
+    1. Connect the LED’s cathode (shorter leg) to the breadboard’s ground rail (black wire)
+    2. Connect the LED’s anode (longer leg) to one end of the 220 Ω resistor (red, red, brown).
+       Put the resistor’s other leg in a different row.
 3.	Connect the circuit to the Arduino Uno
     - connect the other pushbutton lead to digital pin 2 
     - connect the other leg of the 220 Ω resistor to digital pin 3 
@@ -40,9 +49,9 @@ If you’ve never used a breadboard before, please refer to Figure 8 and follow 
     - LED’s cathode (shorter leg) to the breadboard’s ground rail
     - Ground rail to Arduino’s GND
 
-![Figure 8, Sample Layout  for Pushbutton and LED](../../assets/sample_layout_pb_led.png)
+![Figure 2, Sample Layout  for Pushbutton and LED](../../assets/sample_layout_pb_led.png)
 
-*Figure 8, Sample Layout  for Pushbutton and LED*
+*Figure 2, Sample Layout  for Pushbutton and LED*
 
 ## 2 Create Your Project (Sketch)
 
