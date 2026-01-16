@@ -22,6 +22,11 @@ Compile and upload your program to the board. This may take a moment. If it is w
 
 ![White screen](../assets/white_screen.png)
 
+#### Helpful note 
+
+You can use the RTL Viewer and compare your design to the screenshot below to verify your implementation.
+
+![Renderer block diagram](../assets/RTL_white_screen.png)
 
 ## Your Turn: Display a Test Pattern
 

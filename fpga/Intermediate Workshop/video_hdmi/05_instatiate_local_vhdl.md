@@ -102,7 +102,7 @@ Here is the block diagram for `renderer` to help you:
 
 ![Renderer block diagram](../assets/renderer_block_diagram.png)
 
-Notice how the signals for the inputs of `renderer` are the same signals used in the outputs for `video_timing`. 
+Notice how the signals for the inputs of `renderer` are the same signals used in the outputs for `video_timing`. Also remember to create the output signal for `rgb` of type STD_LOGIC_VECTOR(23 downto 0). 
 
 #### Ignore all game logic signals for now
 
@@ -113,7 +113,7 @@ Now, compile the project and resolve any errors. The board will not display anyt
 
 However, you can use the RTL Viewer and compare your design to the screenshot below to verify your implementation.
 
-![Renderer block diagram](../assets/RTL_white_screen.png)
+![Renderer block diagram](../assets/RTL_before_hdmi_connect.png)
 
 ---
 Next: [Connecting the FPGA to an HDMI Monitor](06_display_over_hdmi.md)
